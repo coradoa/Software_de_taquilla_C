@@ -87,6 +87,6 @@
 
         private TextBox txt_user;
         private TextBox txt_pass;
-        private Button btn_login;
+        public Button btn_login;
     }
 }

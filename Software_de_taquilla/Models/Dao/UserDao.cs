@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Software_de_taquilla.Models.Dao
 {
-    public class UserDao
+    public class UserDao : DBContext
     {
+
+        public bool isConnected()
+        {
+            this.connection.Open();
+            return this.connection != null;
+        }
     }
 }

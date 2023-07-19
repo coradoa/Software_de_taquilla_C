@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Controllers;
 
 namespace Software_de_taquilla.Views
 {
@@ -15,11 +16,17 @@ namespace Software_de_taquilla.Views
         public Login()
         {
             InitializeComponent();
+            UserController usr = new UserController(this);
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void printMessage(string message)
+        {
+            MessageBox.Show(message);
         }
     }
 }
