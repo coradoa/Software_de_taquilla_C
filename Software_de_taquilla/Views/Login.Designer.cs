@@ -35,19 +35,24 @@
             // 
             // txt_user
             // 
+            txt_user.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_user.Location = new Point(61, 56);
             txt_user.Multiline = true;
             txt_user.Name = "txt_user";
             txt_user.Size = new Size(229, 33);
             txt_user.TabIndex = 0;
+            txt_user.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_pass
             // 
+            txt_pass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_pass.Location = new Point(61, 124);
             txt_pass.Multiline = true;
             txt_pass.Name = "txt_pass";
+            txt_pass.PasswordChar = '*';
             txt_pass.Size = new Size(229, 33);
             txt_pass.TabIndex = 1;
+            txt_pass.TextAlign = HorizontalAlignment.Center;
             // 
             // btn_login
             // 
