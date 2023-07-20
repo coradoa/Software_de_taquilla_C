@@ -10,5 +10,8 @@
     <Compile Update="Views\UserViews\DashboardCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\UserViews\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Doris\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Doris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla\\Software_de_taquilla\\Software_de_taquilla.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "projectName": "Software_de_taquilla",
+        "projectPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "packagesPath": "C:\\Users\\olste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla\\Software_de_taquilla\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 25a2aa812fb87220183ccbbb793567a75c67a007
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +81,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> 25a2aa812fb87220183ccbbb793567a75c67a007
         }
       }
     }
