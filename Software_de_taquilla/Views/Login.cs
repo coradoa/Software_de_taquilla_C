@@ -34,25 +34,6 @@ namespace Software_de_taquilla.Views
 
         }
 
-        private void txt_pass_Click(object sender, EventArgs e)
-        {
-            txt_pass.Text = "";
-            txt_pass.ForeColor = Color.Black;
-            txt_pass.PasswordChar = '*';
-        }
-
-        private void txt_pass_Leave(object sender, EventArgs e)
-        {
-            txt_pass.Text = "Contraseña";
-            txt_pass.ForeColor = SystemColors.WindowFrame;
-            txt_pass.PasswordChar = '\0';
-        }
-
-        private void txt_user_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txt_user_Click(object sender, EventArgs e)
         {
             txt_user.Text = "";
@@ -63,6 +44,21 @@ namespace Software_de_taquilla.Views
         {
             txt_user.Text = "Usuario";
             txt_user.ForeColor = SystemColors.WindowFrame;
+        }
+
+        private void txt_pass_Click_1(object sender, EventArgs e)
+        {
+            txt_pass.Text = "";
+            txt_pass.ForeColor = Color.Black;
+            txt_pass.PasswordChar = '*';
+
+        }
+
+        private void txt_pass_Leave_1(object sender, EventArgs e)
+        {
+            txt_pass.Text = "Contraseña";
+            txt_pass.ForeColor = SystemColors.WindowFrame;
+            txt_pass.PasswordChar = '\0';
         }
     }
 }
