@@ -97,10 +97,10 @@
 
         #endregion
 
-        private TextBox txt_name;
-        private TextBox txt_contrasenia;
-        private TextBox txt_rol;
-        private DataGridView data_grid;
-        private Button btn_save;
+        public TextBox txt_name;
+        public TextBox txt_contrasenia;
+        public TextBox txt_rol;
+        public DataGridView data_grid;
+        public Button btn_save;
     }
 }

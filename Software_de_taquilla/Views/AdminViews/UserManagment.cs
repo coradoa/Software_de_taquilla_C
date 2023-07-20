@@ -17,5 +17,10 @@ namespace Software_de_taquilla.Views.AdminViews
             InitializeComponent();
         }
 
+        public void printMessage(string msg)
+        {
+            MessageBox.Show(msg);
+        }
+
     }
 }

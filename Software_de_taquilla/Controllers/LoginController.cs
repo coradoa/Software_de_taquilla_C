@@ -8,10 +8,10 @@ using Software_de_taquilla.Views;
 
 namespace Software_de_taquilla.Controllers
 {
-    public class UserController
+    public class LoginController
     {
         public Login view;
-        public UserController(Login view)
+        public LoginController(Login view)
         {
             this.view = view;
             this.view.btn_login.Click += new EventHandler(this.buildView);
