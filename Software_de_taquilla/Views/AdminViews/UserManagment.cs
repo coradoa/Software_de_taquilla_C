@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Controllers;
+
 
 namespace Software_de_taquilla.Views.AdminViews
 {
@@ -15,6 +17,7 @@ namespace Software_de_taquilla.Views.AdminViews
         public UserManagment()
         {
             InitializeComponent();
+            UserController ctrl = new UserController(this);
         }
 
         public void printMessage(string msg)
