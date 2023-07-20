@@ -38,6 +38,7 @@
             // 
             // txt_name
             // 
+            txt_name.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_name.Location = new Point(39, 42);
             txt_name.Multiline = true;
             txt_name.Name = "txt_name";
@@ -46,6 +47,7 @@
             // 
             // txt_contrasenia
             // 
+            txt_contrasenia.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_contrasenia.Location = new Point(39, 105);
             txt_contrasenia.Multiline = true;
             txt_contrasenia.Name = "txt_contrasenia";
@@ -54,6 +56,7 @@
             // 
             // txt_rol
             // 
+            txt_rol.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_rol.Location = new Point(39, 168);
             txt_rol.Multiline = true;
             txt_rol.Name = "txt_rol";
@@ -71,12 +74,17 @@
             // 
             // btn_save
             // 
+            btn_save.BackColor = Color.SeaGreen;
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_save.ForeColor = Color.White;
             btn_save.Location = new Point(39, 245);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(178, 23);
             btn_save.TabIndex = 5;
             btn_save.Text = "Guardar";
-            btn_save.UseVisualStyleBackColor = true;
+            btn_save.UseVisualStyleBackColor = false;
             // 
             // UserManagment
             // 
@@ -89,6 +97,7 @@
             Controls.Add(txt_contrasenia);
             Controls.Add(txt_name);
             Name = "UserManagment";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "UserManagment";
             ((System.ComponentModel.ISupportInitialize)data_grid).EndInit();
             ResumeLayout(false);

@@ -21,6 +21,7 @@ namespace Software_de_taquilla.Controllers
         public void buildComponent(Object sender, EventArgs e)
         {
             this.view.btn_save.Click += new EventHandler(this.saveUser);
+            this.fillDataGrid();
         }
 
         public bool isFullFields()
@@ -42,6 +43,21 @@ namespace Software_de_taquilla.Controllers
             else
             {
                 this.view.printMessage("Llene todos los campos");
+            }
+        }
+
+        public void fillDataGrid()
+        {
+            UserDao userdao = new UserDao();
+            List<User> users = userdao.getUsers();
+            this.view.data_grid.ColumnCount = 4;
+            this.view.data_grid.Columns[0].Name = "ID";
+            this.view.data_grid.Columns[1].Name = "Usuario";
+            this.view.data_grid.Columns[2].Name = "Contraseña";
+            this.view.data_grid.Columns[3].Name = "Rol";
+            foreach (User user in users)
+            {
+                this.view.data_grid.Rows.Add(user.id, user.name, user.pass, user.rol);
             }
         }
     }

@@ -41,15 +41,15 @@ namespace Software_de_taquilla.Models.Dao
         {
             this.connection.Open();
             List<User> users = new List<User>();
-            string sql = "select * from pelicula";
+            string sql = "select * from usuario";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             MySqlDataReader reader = cursor.ExecuteReader();
             while (reader.Read())
             {
-                int id = reader.GetInt32(1);
-                string name = reader.GetString(2);
-                string pass = reader.GetString(3);
-                int rol = reader.GetInt32(4);
+                int id = reader.GetInt32(0);
+                string name = reader.GetString(1);
+                string pass = reader.GetString(2);
+                int rol = reader.GetInt32(3);
                 User usr = new User(id, name, pass, rol);
                 users.Add(usr);
             }
