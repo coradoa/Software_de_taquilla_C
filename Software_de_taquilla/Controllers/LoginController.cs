@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Software_de_taquilla.Models.Dao;
 using Software_de_taquilla.Views;
+using Software_de_taquilla.Views.AdminViews;
 
 namespace Software_de_taquilla.Controllers
 {
@@ -22,8 +23,18 @@ namespace Software_de_taquilla.Controllers
             UserDao myuser = new UserDao();
             string user = this.view.txt_user.Text;
             string pass = this.view.txt_pass.Text;
-            string msg = myuser.userExist(user, pass) ? "Conexion realizaada" : "Error en al conexion";
-            this.view.printMessage(msg);
+            if (myuser.userExist(user, pass))
+            {
+                this.view.printMessage("¡Bienvenido!");
+                this.view.Visible = false;
+                UserManagment form = new UserManagment();
+                form.ShowDialog();
+                this.view.Visible = true;
+            }
+            else
+            {
+                this.view.printMessage("Usuario o Contraseña incorrectos");
+            }
         }
     }
 }

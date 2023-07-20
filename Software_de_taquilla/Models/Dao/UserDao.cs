@@ -20,10 +20,10 @@ namespace Software_de_taquilla.Models.Dao
         {
             bool exist = false;
             this.connection.Open();
-            string query = "select * from user where nombre='" + username + "' and contrasenia='" + password + "'";
+            string query = "select * from usuario where nombre='" + username + "' and contrasenia='" + password + "'";
             MySqlCommand cursor = new MySqlCommand(query, this.connection);
             MySqlDataReader reader = cursor.ExecuteReader();
-            exist = reader.Read();
+            if (reader.HasRows) exist = true;
             this.connection.Close();
             return exist;
         }
