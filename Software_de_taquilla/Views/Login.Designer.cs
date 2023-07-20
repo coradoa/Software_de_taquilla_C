@@ -28,92 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_user = new System.Windows.Forms.TextBox();
-            this.txt_pass = new System.Windows.Forms.TextBox();
-            this.btn_login = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            txt_user = new TextBox();
+            txt_pass = new TextBox();
+            btn_login = new Button();
+            panel1 = new Panel();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // txt_user
             // 
-            this.txt_user.BackColor = System.Drawing.Color.White;
-            this.txt_user.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_user.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_user.Location = new System.Drawing.Point(638, 113);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_user.Multiline = true;
-            this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(262, 37);
-            this.txt_user.TabIndex = 0;
-            this.txt_user.Text = "Usuario";
-            this.txt_user.Click += new System.EventHandler(this.txt_user_Click);
-            this.txt_user.TextChanged += new System.EventHandler(this.txt_user_TextChanged);
-            this.txt_user.Leave += new System.EventHandler(this.txt_user_Leave);
+            txt_user.BackColor = Color.White;
+            txt_user.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_user.ForeColor = SystemColors.WindowFrame;
+            txt_user.Location = new Point(558, 85);
+            txt_user.Multiline = true;
+            txt_user.Name = "txt_user";
+            txt_user.Size = new Size(230, 29);
+            txt_user.TabIndex = 0;
+            txt_user.Text = "Usuario";
+            txt_user.Click += txt_user_Click;
+            txt_user.Leave += txt_user_Leave;
             // 
             // txt_pass
             // 
-            this.txt_pass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_pass.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_pass.Location = new System.Drawing.Point(636, 206);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_pass.Multiline = true;
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(261, 39);
-            this.txt_pass.TabIndex = 1;
-            this.txt_pass.Text = "Contraseña";
+            txt_pass.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_pass.ForeColor = SystemColors.WindowFrame;
+            txt_pass.Location = new Point(556, 154);
+            txt_pass.Multiline = true;
+            txt_pass.Name = "txt_pass";
+            txt_pass.Size = new Size(229, 30);
+            txt_pass.TabIndex = 1;
+            txt_pass.Text = "Contraseña";
+            txt_pass.Click += txt_pass_Click_1;
+            txt_pass.Leave += txt_pass_Leave_1;
             // 
             // btn_login
             // 
-            this.btn_login.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_login.FlatAppearance.BorderSize = 0;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(636, 301);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(264, 33);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = false;
+            btn_login.BackColor = Color.DarkSlateGray;
+            btn_login.FlatAppearance.BorderSize = 0;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(556, 226);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(231, 25);
+            btn_login.TabIndex = 2;
+            btn_login.Text = "Login";
+            btn_login.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
-            this.panel1.Location = new System.Drawing.Point(-1, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(488, 501);
-            this.panel1.TabIndex = 3;
+            panel1.BackColor = Color.FromArgb(36, 171, 218);
+            panel1.Location = new Point(-1, 1);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(427, 376);
+            panel1.TabIndex = 3;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label1.Location = new System.Drawing.Point(716, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 38);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "LOGIN";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ImageAlign = ContentAlignment.TopRight;
+            label1.Location = new Point(626, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(80, 30);
+            label1.TabIndex = 4;
+            label1.Text = "LOGIN";
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1049, 502);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.txt_pass);
-            this.Controls.Add(this.txt_user);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Login";
-            this.Text = "Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(918, 376);
+            Controls.Add(label1);
+            Controls.Add(panel1);
+            Controls.Add(btn_login);
+            Controls.Add(txt_pass);
+            Controls.Add(txt_user);
+            Name = "Login";
+            Text = "Login";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
