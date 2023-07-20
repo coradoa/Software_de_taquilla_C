@@ -56,5 +56,16 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
             return users;
         }
+
+        public void deleteUser(int id)
+        {
+            this.connection.Open();
+            string sql = "delete from usuario where id='" + id + "'";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
+
     }
 }

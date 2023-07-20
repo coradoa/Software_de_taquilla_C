@@ -21,9 +21,24 @@ namespace Software_de_taquilla.Controllers
         public void buildComponent(Object sender, EventArgs e)
         {
             this.view.btn_save.Click += new EventHandler(this.saveUser);
+            this.view.btn_delete.Click += new EventHandler(this.deleteUser);
             this.fillDataGrid();
             this.fillRoleList();
+            this.view.passImage.Click += new EventHandler(this.passwordStatus);
         }
+
+        public void passwordStatus(Object sender, EventArgs e)
+        {
+            if (this.view.txt_contrasenia.PasswordChar.Equals('\0'))
+            {
+                this.view.txt_contrasenia.PasswordChar = '*';
+            }
+            else
+            {
+                this.view.txt_contrasenia.PasswordChar = '\0';
+            }
+        }
+
 
         public bool isFullFields()
         {
@@ -75,6 +90,17 @@ namespace Software_de_taquilla.Controllers
             foreach (Role role in roles)
             {
                 this.view.role_list.Items.Add(role.description);
+            }
+        }
+
+        public void deleteUser(Object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(this.view.data_grid.SelectedRows[0].Cells[0].Value);
+            if (MessageBox.Show("¿Esta seguro que desea eliminarlo?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+
+                UserDao user = new UserDao();
+                user.deleteUser(id);
             }
         }
     }
