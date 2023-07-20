@@ -28,5 +28,14 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
             return exist;
         }
+
+        public void insertUser(string username, string pass, int rol)
+        {
+            this.connection.Open();
+            string sql = "insert into usuario(nombre, contrasenia, rol)values('" + username + "', '" + pass + "', '" + rol + "')";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
     }
 }
