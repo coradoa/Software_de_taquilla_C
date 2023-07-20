@@ -59,11 +59,11 @@
             // 
             // txt_correo
             // 
-            this.txt_correo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_correo.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_correo.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_correo.Location = new System.Drawing.Point(66, 90);
             this.txt_correo.Name = "txt_correo";
-            this.txt_correo.Size = new System.Drawing.Size(331, 31);
+            this.txt_correo.Size = new System.Drawing.Size(331, 30);
             this.txt_correo.TabIndex = 1;
             this.txt_correo.Text = "ejemplo@gmail.com";
             this.txt_correo.Click += new System.EventHandler(this.txt_correo_Click);
@@ -71,11 +71,11 @@
             // 
             // txt_telefono
             // 
-            this.txt_telefono.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_telefono.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_telefono.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_telefono.Location = new System.Drawing.Point(455, 94);
             this.txt_telefono.Name = "txt_telefono";
-            this.txt_telefono.Size = new System.Drawing.Size(276, 31);
+            this.txt_telefono.Size = new System.Drawing.Size(276, 30);
             this.txt_telefono.TabIndex = 2;
             this.txt_telefono.Text = "Teléfono";
             this.txt_telefono.Click += new System.EventHandler(this.txt_telefono_Click);
@@ -84,11 +84,11 @@
             // 
             // txt_monto
             // 
-            this.txt_monto.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_monto.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_monto.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_monto.Location = new System.Drawing.Point(66, 156);
             this.txt_monto.Name = "txt_monto";
-            this.txt_monto.Size = new System.Drawing.Size(331, 31);
+            this.txt_monto.Size = new System.Drawing.Size(331, 30);
             this.txt_monto.TabIndex = 3;
             this.txt_monto.Text = "Q.245.00 ";
             this.txt_monto.Click += new System.EventHandler(this.txt_monto_Click);
@@ -96,69 +96,71 @@
             // 
             // txt_notarjeta
             // 
-            this.txt_notarjeta.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_notarjeta.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_notarjeta.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_notarjeta.Location = new System.Drawing.Point(66, 216);
             this.txt_notarjeta.Name = "txt_notarjeta";
-            this.txt_notarjeta.Size = new System.Drawing.Size(331, 31);
+            this.txt_notarjeta.Size = new System.Drawing.Size(331, 30);
             this.txt_notarjeta.TabIndex = 4;
             this.txt_notarjeta.Text = "Número de Tarjeta";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dateTimePicker1.Location = new System.Drawing.Point(455, 33);
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTimePicker1.Location = new System.Drawing.Point(440, 36);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(293, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(293, 26);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // txt_cvv
             // 
-            this.txt_cvv.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_cvv.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_cvv.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_cvv.Location = new System.Drawing.Point(66, 291);
             this.txt_cvv.Name = "txt_cvv";
-            this.txt_cvv.Size = new System.Drawing.Size(331, 31);
+            this.txt_cvv.Size = new System.Drawing.Size(331, 30);
             this.txt_cvv.TabIndex = 6;
             this.txt_cvv.Text = "CVV";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(66, 263);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 25);
+            this.label2.Size = new System.Drawing.Size(55, 21);
             this.label2.TabIndex = 7;
             this.label2.Text = "CVV";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(455, 263);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(183, 25);
+            this.label3.Size = new System.Drawing.Size(211, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "Fecha de vencimiento";
             // 
             // txt_fechav
             // 
-            this.txt_fechav.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_fechav.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_fechav.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_fechav.Location = new System.Drawing.Point(455, 290);
             this.txt_fechav.Name = "txt_fechav";
-            this.txt_fechav.Size = new System.Drawing.Size(276, 31);
+            this.txt_fechav.Size = new System.Drawing.Size(276, 30);
             this.txt_fechav.TabIndex = 9;
             this.txt_fechav.Text = "dd/mm/yyyy";
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(455, 163);
+            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton1.Location = new System.Drawing.Point(455, 157);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(246, 29);
+            this.radioButton1.Size = new System.Drawing.Size(278, 25);
             this.radioButton1.TabIndex = 10;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Pago con tarjeta de credito";
@@ -167,7 +169,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(467, 193);
+            this.pictureBox1.Location = new System.Drawing.Point(455, 192);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(264, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -190,7 +192,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(837, 537);
+            this.ClientSize = new System.Drawing.Size(782, 410);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radioButton1);

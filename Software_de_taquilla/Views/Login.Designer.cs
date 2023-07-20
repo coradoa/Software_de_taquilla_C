@@ -41,7 +41,7 @@
             // txt_user
             // 
             this.txt_user.BackColor = System.Drawing.Color.White;
-            this.txt_user.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_user.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_user.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_user.Location = new System.Drawing.Point(619, 166);
             this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -53,7 +53,7 @@
             // 
             // txt_pass
             // 
-            this.txt_pass.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_pass.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_pass.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_pass.Location = new System.Drawing.Point(616, 258);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -68,7 +68,7 @@
             this.btn_login.BackColor = System.Drawing.Color.DarkSlateGray;
             this.btn_login.FlatAppearance.BorderSize = 0;
             this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.btn_login.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_login.ForeColor = System.Drawing.Color.White;
             this.btn_login.Location = new System.Drawing.Point(616, 354);
             this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
