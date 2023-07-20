@@ -60,5 +60,15 @@ namespace Software_de_taquilla.Views
             txt_pass.ForeColor = SystemColors.WindowFrame;
             txt_pass.PasswordChar = '\0';
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
