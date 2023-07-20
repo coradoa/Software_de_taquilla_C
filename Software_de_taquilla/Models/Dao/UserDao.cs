@@ -66,6 +66,15 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
         }
 
+        public void updateUser(int id, string n, string c, int r)
+        {
+            this.connection.Open();
+            string sql = "update usuario set nombre='" + n + "', contrasenia='" + c + "', role='" + r + "' where id='" + id + "'";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
 
     }
 }

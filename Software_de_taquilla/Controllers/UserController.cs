@@ -22,9 +22,22 @@ namespace Software_de_taquilla.Controllers
         {
             this.view.btn_save.Click += new EventHandler(this.saveUser);
             this.view.btn_delete.Click += new EventHandler(this.deleteUser);
+            this.view.passImage.Click += new EventHandler(this.passwordStatus);
+            this.view.btn_update.Click += new EventHandler(this.updateUser);
             this.fillDataGrid();
             this.fillRoleList();
-            this.view.passImage.Click += new EventHandler(this.passwordStatus);
+        }
+        public void updateUser(Object sender, EventArgs e)
+        {
+
+            string n = this.view.data_grid.SelectedRows[0].Cells[1].Value.ToString();
+            string c = this.view.data_grid.SelectedRows[0].Cells[2].Value.ToString();
+            int r = Convert.ToInt32(this.view.data_grid.SelectedRows[0].Cells[3].Value);
+            this.view.btn_save.Text = "Actualizar Cambios";
+            this.view.txt_name.Text = n;
+            this.view.txt_contrasenia.Text = c;
+            this.view.role_list.SelectedIndex = r - 1;
+            this.view.btn_save.BackColor = Color.FromArgb(255, 75, 10);
         }
 
         public void passwordStatus(Object sender, EventArgs e)
@@ -48,21 +61,46 @@ namespace Software_de_taquilla.Controllers
 
         public void saveUser(Object sender, EventArgs e)
         {
-            string username = this.view.txt_name.Text;
-            string pass = this.view.txt_contrasenia.Text;
-            int rol = Convert.ToInt32(this.view.role_list.SelectedIndex + 1);
-            UserDao mydao = new UserDao();
-            mydao.insertUser(username, pass, rol);
-            if (this.isFullFields())
+            if (this.view.btn_save.BackColor == Color.SeaGreen)
             {
-                this.view.printMessage("Usuario Agregado :D");
-                this.fillDataGrid();
-                this.view.clearTextBox();
+
+                string username = this.view.txt_name.Text;
+                string pass = this.view.txt_contrasenia.Text;
+                int rol = Convert.ToInt32(this.view.role_list.SelectedIndex + 1);
+                UserDao mydao = new UserDao();
+                mydao.insertUser(username, pass, rol);
+                if (this.isFullFields())
+                {
+                    this.view.printMessage("Usuario Agregado :D");
+                    this.fillDataGrid();
+                    this.view.clearTextBox();
+                }
+                else
+                {
+                    this.view.printMessage("Llene todos los campos");
+                    this.view.clearTextBox();
+                }
             }
             else
             {
-                this.view.printMessage("Llene todos los campos");
-                this.view.clearTextBox();
+                string username = this.view.txt_name.Text;
+                string pass = this.view.txt_contrasenia.Text;
+                int rol = Convert.ToInt32(this.view.role_list.SelectedIndex + 1);
+                int id = Convert.ToInt32(this.view.data_grid.SelectedRows[0].Cells[0].Value);
+                UserDao mydao = new UserDao();
+                mydao.updateUser(id, username, pass, rol);
+                if (this.isFullFields())
+                {
+                    this.view.printMessage("Usuario Actualizado");
+                    this.fillDataGrid();
+                    this.view.clearTextBox();
+                    this.view.btn_save.BackColor = Color.SeaGreen;
+                }
+                else
+                {
+                    this.view.printMessage("Llene todos los campos");
+                    this.view.clearTextBox();
+                }
             }
         }
 
