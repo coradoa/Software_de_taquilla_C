@@ -33,5 +33,19 @@ namespace Software_de_taquilla.Views
         {
 
         }
+
+        private void txt_pass_Click(object sender, EventArgs e)
+        {
+            txt_pass.Text = "";
+            txt_pass.ForeColor = Color.Black;
+            txt_pass.PasswordChar = '*';
+        }
+
+        private void txt_pass_Leave(object sender, EventArgs e)
+        {
+            txt_pass.Text = "Contraseña";
+            txt_pass.ForeColor = SystemColors.WindowFrame;
+            txt_pass.PasswordChar = '\0';
+        }
     }
 }
