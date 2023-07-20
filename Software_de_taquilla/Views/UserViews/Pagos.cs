@@ -48,8 +48,8 @@ namespace Software_de_taquilla.Views.UserViews
 
         private void txt_telefono_Leave(object sender, EventArgs e)
         {
-            txt_correo.Text = "Telefono";
-            txt_correo.ForeColor = SystemColors.WindowFrame;
+            txt_telefono.Text = "Telefono";
+            txt_telefono.ForeColor = SystemColors.WindowFrame;
         }
 
         private void txt_monto_Click(object sender, EventArgs e)
