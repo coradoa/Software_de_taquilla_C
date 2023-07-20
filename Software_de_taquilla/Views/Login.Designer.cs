@@ -40,45 +40,6 @@
             // 
             // txt_user
             // 
-<<<<<<< HEAD
-            this.txt_user.BackColor = System.Drawing.Color.White;
-            this.txt_user.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_user.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_user.Location = new System.Drawing.Point(619, 166);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_user.Multiline = true;
-            this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(262, 37);
-            this.txt_user.TabIndex = 0;
-            this.txt_user.Text = "Usuario";
-            // 
-            // txt_pass
-            // 
-            this.txt_pass.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_pass.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_pass.Location = new System.Drawing.Point(616, 258);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_pass.Multiline = true;
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(261, 39);
-            this.txt_pass.TabIndex = 1;
-            this.txt_pass.Text = "Contraseña";
-            // 
-            // btn_login
-            // 
-            this.btn_login.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_login.FlatAppearance.BorderSize = 0;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Bookman Old Style", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(616, 354);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(264, 33);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = false;
-=======
             txt_user.BackColor = Color.White;
             txt_user.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_user.ForeColor = SystemColors.WindowFrame;
@@ -113,7 +74,6 @@
             btn_login.TabIndex = 2;
             btn_login.Text = "Login";
             btn_login.UseVisualStyleBackColor = false;
->>>>>>> b4b1191ff65e983ef41a1d18c1c2017663d7403e
             // 
             // panel1
             // 
