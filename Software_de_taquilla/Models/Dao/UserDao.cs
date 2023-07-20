@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Models.Dao
 {
@@ -34,6 +35,26 @@ namespace Software_de_taquilla.Models.Dao
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
             this.connection.Close();
+        }
+
+        public List<User> getUsers()
+        {
+            this.connection.Open();
+            List<User> users = new List<User>();
+            string sql = "select * from pelicula";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            MySqlDataReader reader = cursor.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(1);
+                string name = reader.GetString(2);
+                string pass = reader.GetString(3);
+                int rol = reader.GetInt32(4);
+                User usr = new User(id, name, pass, rol);
+                users.Add(usr);
+            }
+            this.connection.Close();
+            return users;
         }
     }
 }
