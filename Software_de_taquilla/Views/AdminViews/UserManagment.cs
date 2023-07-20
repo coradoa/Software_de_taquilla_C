@@ -25,5 +25,11 @@ namespace Software_de_taquilla.Views.AdminViews
             MessageBox.Show(msg);
         }
 
+        public void clearTextBox()
+        {
+            txt_contrasenia.Text = "";
+            txt_name.Text = "";
+        }
+
     }
 }

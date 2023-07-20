@@ -30,9 +30,12 @@
         {
             txt_name = new TextBox();
             txt_contrasenia = new TextBox();
-            txt_rol = new TextBox();
             data_grid = new DataGridView();
             btn_save = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            role_list = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
             SuspendLayout();
             // 
@@ -51,20 +54,14 @@
             txt_contrasenia.Location = new Point(39, 105);
             txt_contrasenia.Multiline = true;
             txt_contrasenia.Name = "txt_contrasenia";
+            txt_contrasenia.PasswordChar = '*';
             txt_contrasenia.Size = new Size(178, 31);
             txt_contrasenia.TabIndex = 1;
             // 
-            // txt_rol
-            // 
-            txt_rol.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_rol.Location = new Point(39, 168);
-            txt_rol.Multiline = true;
-            txt_rol.Name = "txt_rol";
-            txt_rol.Size = new Size(178, 31);
-            txt_rol.TabIndex = 2;
-            // 
             // data_grid
             // 
+            data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             data_grid.Location = new Point(277, 42);
             data_grid.Name = "data_grid";
@@ -86,14 +83,53 @@
             btn_save.Text = "Guardar";
             btn_save.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(45, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 6;
+            label1.Text = "Usuario";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(45, 87);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 15);
+            label2.TabIndex = 7;
+            label2.Text = "Contraseña";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(45, 149);
+            label3.Name = "label3";
+            label3.Size = new Size(24, 15);
+            label3.TabIndex = 8;
+            label3.Text = "Rol";
+            // 
+            // role_list
+            // 
+            role_list.FlatStyle = FlatStyle.Flat;
+            role_list.FormattingEnabled = true;
+            role_list.Location = new Point(39, 171);
+            role_list.Name = "role_list";
+            role_list.Size = new Size(178, 23);
+            role_list.TabIndex = 9;
+            // 
             // UserManagment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(861, 328);
+            Controls.Add(role_list);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btn_save);
             Controls.Add(data_grid);
-            Controls.Add(txt_rol);
             Controls.Add(txt_contrasenia);
             Controls.Add(txt_name);
             Name = "UserManagment";
@@ -108,8 +144,11 @@
 
         public TextBox txt_name;
         public TextBox txt_contrasenia;
-        public TextBox txt_rol;
         public DataGridView data_grid;
         public Button btn_save;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        public ComboBox role_list;
     }
 }
