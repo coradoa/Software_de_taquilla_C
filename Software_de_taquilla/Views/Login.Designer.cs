@@ -90,7 +90,6 @@
             Controls.Add(txt_user);
             Name = "Login";
             Text = "Login";
-            Load += Login_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
