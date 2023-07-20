@@ -12,12 +12,14 @@ namespace Software_de_taquilla.Models.Dto
         public int id;
         public string name;
         public string image;
-        public int duration;
+        public string public_;
+        public string duration;
         public int id_listing;
         public int id_room;
 
-        public Movie(int id, string name, string image, int duration, int id_listing, int id_room)
+        public Movie(int id, string name, string image, string duration, int id_listing, int id_room, string p)
         {
+            this.public_ = p;
             this.id = id;
             this.name = name;
             this.image = image;
