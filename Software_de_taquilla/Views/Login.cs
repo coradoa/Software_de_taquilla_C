@@ -28,5 +28,10 @@ namespace Software_de_taquilla.Views
         {
             MessageBox.Show(message);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
