@@ -114,10 +114,11 @@
         }
 
         #endregion
+
+        private TextBox txt_user;
+        private TextBox txt_pass;
         public Button btn_login;
         private Panel panel1;
         private Label label1;
-        public TextBox txt_user;
-        public TextBox txt_pass;
     }
 }

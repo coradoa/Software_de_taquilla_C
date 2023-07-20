@@ -20,9 +20,7 @@ namespace Software_de_taquilla.Controllers
         private void buildView(Object sender, EventArgs e)
         {
             UserDao myuser = new UserDao();
-            string user = this.view.txt_user.Text;
-            string pass = this.view.txt_pass.Text;
-            string msg = myuser.userExist(user, pass) ? "Conexion realizaada" : "Error en al conexion";
+            string msg = myuser.isConnected() ? "Conexion realizaada" : "Error en al conexion";
             this.view.printMessage(msg);
         }
     }
