@@ -28,75 +28,71 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_user = new System.Windows.Forms.TextBox();
-            this.txt_pass = new System.Windows.Forms.TextBox();
-            this.btn_login = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            txt_user = new TextBox();
+            txt_pass = new TextBox();
+            btn_login = new Button();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // txt_user
             // 
-            this.txt_user.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_user.Location = new System.Drawing.Point(70, 75);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_user.Multiline = true;
-            this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(261, 43);
-            this.txt_user.TabIndex = 0;
-            this.txt_user.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txt_user.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_user.Location = new Point(61, 56);
+            txt_user.Multiline = true;
+            txt_user.Name = "txt_user";
+            txt_user.Size = new Size(229, 33);
+            txt_user.TabIndex = 0;
+            txt_user.TextAlign = HorizontalAlignment.Center;
             // 
             // txt_pass
             // 
-            this.txt_pass.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_pass.Location = new System.Drawing.Point(70, 165);
-            this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_pass.Multiline = true;
-            this.txt_pass.Name = "txt_pass";
-            this.txt_pass.PasswordChar = '*';
-            this.txt_pass.Size = new System.Drawing.Size(261, 43);
-            this.txt_pass.TabIndex = 1;
-            this.txt_pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            txt_pass.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_pass.Location = new Point(61, 124);
+            txt_pass.Multiline = true;
+            txt_pass.Name = "txt_pass";
+            txt_pass.PasswordChar = '*';
+            txt_pass.Size = new Size(229, 33);
+            txt_pass.TabIndex = 1;
+            txt_pass.TextAlign = HorizontalAlignment.Center;
             // 
             // btn_login
             // 
-            this.btn_login.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.btn_login.FlatAppearance.BorderSize = 0;
-            this.btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(70, 260);
-            this.btn_login.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(264, 33);
-            this.btn_login.TabIndex = 2;
-            this.btn_login.Text = "Login";
-            this.btn_login.UseVisualStyleBackColor = false;
+            btn_login.BackColor = Color.DarkSlateGray;
+            btn_login.FlatAppearance.BorderSize = 0;
+            btn_login.FlatStyle = FlatStyle.Flat;
+            btn_login.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            btn_login.ForeColor = Color.White;
+            btn_login.Location = new Point(61, 195);
+            btn_login.Name = "btn_login";
+            btn_login.Size = new Size(231, 25);
+            btn_login.TabIndex = 2;
+            btn_login.Text = "Login";
+            btn_login.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 20);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Usuario";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(69, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Usuario";
+            label1.Click += label1_Click;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 449);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.txt_pass);
-            this.Controls.Add(this.txt_user);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Login";
-            this.Text = "Login";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(345, 277);
+            Controls.Add(label1);
+            Controls.Add(btn_login);
+            Controls.Add(txt_pass);
+            Controls.Add(txt_user);
+            Name = "Login";
+            Text = "Login";
+            Load += Login_Load_1;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

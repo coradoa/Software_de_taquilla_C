@@ -7,5 +7,8 @@
     <Compile Update="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\UserViews\DashboardCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
