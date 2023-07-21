@@ -19,13 +19,13 @@ namespace Software_de_taquilla.Models.Dao
             MySqlDataReader reader = cursor.ExecuteReader();
             while (reader.Read())
             {
-                int id = reader.GetInt32(1);
-                string name = reader.GetString(2);
-                string image = reader.GetString(3);
-                string public_ = reader.GetString(4);
-                string duration = reader.GetString(5);
-                int id_listing = reader.GetInt32(6);
-                int id_room = reader.GetInt32(7);
+                int id = reader.GetInt32(0);
+                string name = reader.GetString(1);
+                string image = reader.GetString(2);
+                string public_ = reader.GetString(3);
+                string duration = reader.GetString(4);
+                int id_listing = reader.GetInt32(5);
+                int id_room = reader.GetInt32(6);
                 Movie movie = new Movie(id, name, image, duration, id_listing, id_room, public_);
                 movies.Add(movie);
             }
@@ -35,10 +35,13 @@ namespace Software_de_taquilla.Models.Dao
 
         public void insertMovie(string name, string image, string duration, int id_listing, int id_room, string p)
         {
+            MessageBox.Show(id_room + "," + id_listing);
             this.connection.Open();
-            string query = "INSERT INTO Pelicula (nombre, imagen, publico, duracion, id_cartelera, id_sala)VALUES";
-            query += "('" + name + "', '" + image + "', '" + duration + "', '" + id_listing + "', '" + id_room + "', '" + p + "');";
-            MySqlCommand cursor = new MySqlCommand(query, this.connection);
+            string sql = "INSERT INTO `pelicula` (`nombre`, `imagen`, `publico`, `duracion`, `id_cartelera`, `id_sala`) VALUES";
+            //string query = "INSERT INTO Pelicula (nombre, imagen, publico, duracion, id_cartelera, id_sala)VALUES";
+            //query += "('" + name + "', '" + image + "' , '" + p + "', '" + duration + "', '" + id_listing + "', '" + id_room + "');";
+            sql += "('" + name + "', '" + image + "' ,'" + p + "',  '" + duration + "', '" + id_listing + "', '" + id_room + "');";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
             this.connection.Close();
         }
