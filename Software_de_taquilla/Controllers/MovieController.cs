@@ -17,14 +17,27 @@ namespace Software_de_taquilla.Controllers
         {
             this.view = view;
             this.view.Load += new EventHandler(this.buildComponent);
+            this.view.btn_save.Click += new EventHandler(this.saveMovie);
         }
 
-
+        public void saveMovie(Object sender, EventArgs e)
+        {
+            string name = view.txt_name.Text;
+            string publico = view.txt_publico.Text;
+            string d = view.txt_duracion.Text;
+            int listing = view.list_listing.SelectedIndex;
+            int room = view.room_listing.SelectedIndex;
+            string image = view.image_location;
+            MovieDao dao = new MovieDao();
+            dao.insertMovie(name, image, d, listing, room, publico);
+            view.printMessage("Pelicula Agregada");
+            view.clearTextBox();
+            this.fillDataGrid();
+        }
         public void buildComponent(Object sender, EventArgs e)
         {
             this.fillDataGrid();
         }
-
         public void fillDataGrid()
         {
             view.data_grid.Rows.Clear();

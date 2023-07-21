@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            passImage = new PictureBox();
             btn_update = new Button();
             btn_delete = new Button();
             label3 = new Label();
@@ -42,25 +41,14 @@
             list_listing = new ComboBox();
             label4 = new Label();
             panel1 = new Panel();
+            panel_picture = new Panel();
+            label6 = new Label();
             label5 = new Label();
             room_listing = new ComboBox();
-            picture_movie = new PictureBox();
-            label6 = new Label();
-            ((System.ComponentModel.ISupportInitialize)passImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txt_duracion).BeginInit();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picture_movie).BeginInit();
             SuspendLayout();
-            // 
-            // passImage
-            // 
-            passImage.Location = new Point(210, 101);
-            passImage.Name = "passImage";
-            passImage.Size = new Size(17, 27);
-            passImage.SizeMode = PictureBoxSizeMode.Zoom;
-            passImage.TabIndex = 23;
-            passImage.TabStop = false;
             // 
             // btn_update
             // 
@@ -149,7 +137,6 @@
             txt_publico.Location = new Point(26, 102);
             txt_publico.Multiline = true;
             txt_publico.Name = "txt_publico";
-            txt_publico.PasswordChar = '*';
             txt_publico.Size = new Size(178, 26);
             txt_publico.TabIndex = 14;
             // 
@@ -188,10 +175,10 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(panel_picture);
             panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(room_listing);
-            panel1.Controls.Add(picture_movie);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(txt_name);
@@ -199,13 +186,33 @@
             panel1.Controls.Add(txt_publico);
             panel1.Controls.Add(txt_duracion);
             panel1.Controls.Add(btn_save);
-            panel1.Controls.Add(passImage);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(410, 325);
             panel1.TabIndex = 28;
+            // 
+            // panel_picture
+            // 
+            panel_picture.AllowDrop = true;
+            panel_picture.BackColor = Color.Silver;
+            panel_picture.BackgroundImageLayout = ImageLayout.Zoom;
+            panel_picture.Location = new Point(27, 155);
+            panel_picture.Name = "panel_picture";
+            panel_picture.Size = new Size(177, 100);
+            panel_picture.TabIndex = 32;
+            panel_picture.DragDrop += panel_picture_DragDrop;
+            panel_picture.DragEnter += panel_picture_DragEnter;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(27, 134);
+            label6.Name = "label6";
+            label6.Size = new Size(47, 15);
+            label6.TabIndex = 31;
+            label6.Text = "Imagen";
             // 
             // label5
             // 
@@ -224,24 +231,6 @@
             room_listing.Size = new Size(121, 23);
             room_listing.TabIndex = 29;
             // 
-            // picture_movie
-            // 
-            picture_movie.Location = new Point(26, 153);
-            picture_movie.Name = "picture_movie";
-            picture_movie.Size = new Size(178, 111);
-            picture_movie.SizeMode = PictureBoxSizeMode.Zoom;
-            picture_movie.TabIndex = 28;
-            picture_movie.TabStop = false;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(27, 134);
-            label6.Name = "label6";
-            label6.Size = new Size(47, 15);
-            label6.TabIndex = 31;
-            label6.Text = "Imagen";
-            // 
             // MovieManagment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -254,18 +243,14 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "MovieManagment";
             Text = "MovieManagment";
-            ((System.ComponentModel.ISupportInitialize)passImage).EndInit();
             ((System.ComponentModel.ISupportInitialize)data_grid).EndInit();
             ((System.ComponentModel.ISupportInitialize)txt_duracion).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picture_movie).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        public PictureBox passImage;
         public Button btn_update;
         public Button btn_delete;
         private Label label3;
@@ -278,10 +263,10 @@
         private Label label4;
         private Panel panel1;
         private Label label5;
-        private PictureBox picture_movie;
         public NumericUpDown txt_duracion;
         public ComboBox list_listing;
         public ComboBox room_listing;
         private Label label6;
+        public Panel panel_picture;
     }
 }
