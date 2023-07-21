@@ -2,7 +2,26 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="Views\AdminViews\Cartelera.cs">
+=======
+    <Compile Update="Views\AdminViews\DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminViews\MovieManagment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminViews\PuntosClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminViews\ReportesMensuales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminViews\ReportesSemanales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\AdminViews\UserManagment.cs">
+>>>>>>> d33fbeae9f641300c71909c83dd7b1f694a28d0e
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\ClientView.cs">
@@ -17,9 +36,12 @@
     <Compile Update="Views\UserViews\DashboardCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Views\UserViews\CarteleraUser.cs">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> d33fbeae9f641300c71909c83dd7b1f694a28d0e
     <Compile Update="Views\UserViews\MenuAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
