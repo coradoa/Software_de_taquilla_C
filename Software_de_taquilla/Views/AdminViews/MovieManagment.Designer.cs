@@ -28,274 +28,229 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.passImage = new System.Windows.Forms.PictureBox();
-            this.btn_update = new System.Windows.Forms.Button();
-            this.btn_delete = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.data_grid = new System.Windows.Forms.DataGridView();
-            this.txt_publico = new System.Windows.Forms.TextBox();
-            this.txt_name = new System.Windows.Forms.TextBox();
-            this.txt_duracion = new System.Windows.Forms.NumericUpDown();
-            this.list_listing = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.room_listing = new System.Windows.Forms.ComboBox();
-            this.picture_movie = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.passImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_duracion)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_movie)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // passImage
-            // 
-            this.passImage.Location = new System.Drawing.Point(240, 135);
-            this.passImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.passImage.Name = "passImage";
-            this.passImage.Size = new System.Drawing.Size(33, 34);
-            this.passImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.passImage.TabIndex = 23;
-            this.passImage.TabStop = false;
+            btn_update = new Button();
+            btn_delete = new Button();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            btn_save = new Button();
+            data_grid = new DataGridView();
+            txt_publico = new TextBox();
+            txt_name = new TextBox();
+            txt_duracion = new NumericUpDown();
+            list_listing = new ComboBox();
+            label4 = new Label();
+            panel1 = new Panel();
+            panel_picture = new Panel();
+            label6 = new Label();
+            label5 = new Label();
+            room_listing = new ComboBox();
+            ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txt_duracion).BeginInit();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // btn_update
             // 
-            this.btn_update.BackColor = System.Drawing.Color.Goldenrod;
-            this.btn_update.FlatAppearance.BorderSize = 0;
-            this.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_update.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_update.ForeColor = System.Drawing.Color.White;
-            this.btn_update.Location = new System.Drawing.Point(849, 419);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(118, 31);
-            this.btn_update.TabIndex = 22;
-            this.btn_update.Text = "Actualizar";
-            this.btn_update.UseVisualStyleBackColor = false;
+            btn_update.BackColor = Color.Goldenrod;
+            btn_update.FlatAppearance.BorderSize = 0;
+            btn_update.FlatStyle = FlatStyle.Flat;
+            btn_update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_update.ForeColor = Color.White;
+            btn_update.Location = new Point(743, 314);
+            btn_update.Name = "btn_update";
+            btn_update.Size = new Size(103, 23);
+            btn_update.TabIndex = 22;
+            btn_update.Text = "Actualizar";
+            btn_update.UseVisualStyleBackColor = false;
             // 
             // btn_delete
             // 
-            this.btn_delete.BackColor = System.Drawing.Color.IndianRed;
-            this.btn_delete.FlatAppearance.BorderSize = 0;
-            this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_delete.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(1026, 419);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(118, 31);
-            this.btn_delete.TabIndex = 21;
-            this.btn_delete.Text = "Eliminar";
-            this.btn_delete.UseVisualStyleBackColor = false;
+            btn_delete.BackColor = Color.IndianRed;
+            btn_delete.FlatAppearance.BorderSize = 0;
+            btn_delete.FlatStyle = FlatStyle.Flat;
+            btn_delete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_delete.ForeColor = Color.White;
+            btn_delete.Location = new Point(898, 314);
+            btn_delete.Name = "btn_delete";
+            btn_delete.Size = new Size(103, 23);
+            btn_delete.TabIndex = 21;
+            btn_delete.Text = "Eliminar";
+            btn_delete.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(296, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Duración";
+            label3.AutoSize = true;
+            label3.Location = new Point(259, 31);
+            label3.Name = "label3";
+            label3.Size = new Size(55, 15);
+            label3.TabIndex = 19;
+            label3.Text = "Duracion";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(30, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Publico";
+            label2.AutoSize = true;
+            label2.Location = new Point(26, 84);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 15);
+            label2.TabIndex = 18;
+            label2.Text = "Publico";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(30, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Nombre";
+            label1.AutoSize = true;
+            label1.Location = new Point(26, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 15);
+            label1.TabIndex = 17;
+            label1.Text = "Nombre";
             // 
             // btn_save
             // 
-            this.btn_save.BackColor = System.Drawing.Color.SeaGreen;
-            this.btn_save.FlatAppearance.BorderSize = 0;
-            this.btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_save.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_save.ForeColor = System.Drawing.Color.White;
-            this.btn_save.Location = new System.Drawing.Point(30, 384);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(203, 31);
-            this.btn_save.TabIndex = 16;
-            this.btn_save.Text = "Guardar";
-            this.btn_save.UseVisualStyleBackColor = false;
+            btn_save.BackColor = Color.SeaGreen;
+            btn_save.FlatAppearance.BorderSize = 0;
+            btn_save.FlatStyle = FlatStyle.Flat;
+            btn_save.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_save.ForeColor = Color.White;
+            btn_save.Location = new Point(26, 288);
+            btn_save.Name = "btn_save";
+            btn_save.Size = new Size(178, 23);
+            btn_save.TabIndex = 16;
+            btn_save.Text = "Guardar";
+            btn_save.UseVisualStyleBackColor = false;
             // 
             // data_grid
             // 
-            this.data_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.data_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.data_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid.Location = new System.Drawing.Point(501, 23);
-            this.data_grid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.data_grid.Name = "data_grid";
-            this.data_grid.RowHeadersWidth = 51;
-            this.data_grid.RowTemplate.Height = 25;
-            this.data_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.data_grid.Size = new System.Drawing.Size(645, 377);
-            this.data_grid.TabIndex = 15;
+            data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            data_grid.Location = new Point(438, 17);
+            data_grid.Name = "data_grid";
+            data_grid.RowTemplate.Height = 25;
+            data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            data_grid.Size = new Size(564, 283);
+            data_grid.TabIndex = 15;
             // 
             // txt_publico
             // 
-            this.txt_publico.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_publico.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_publico.Location = new System.Drawing.Point(30, 136);
-            this.txt_publico.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_publico.Multiline = true;
-            this.txt_publico.Name = "txt_publico";
-            this.txt_publico.PasswordChar = '*';
-            this.txt_publico.Size = new System.Drawing.Size(203, 33);
-            this.txt_publico.TabIndex = 14;
+            txt_publico.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_publico.Location = new Point(26, 102);
+            txt_publico.Multiline = true;
+            txt_publico.Name = "txt_publico";
+            txt_publico.Size = new Size(178, 26);
+            txt_publico.TabIndex = 14;
             // 
             // txt_name
             // 
-            this.txt_name.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_name.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_name.Location = new System.Drawing.Point(30, 65);
-            this.txt_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_name.Multiline = true;
-            this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(203, 33);
-            this.txt_name.TabIndex = 13;
+            txt_name.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_name.Location = new Point(26, 49);
+            txt_name.Multiline = true;
+            txt_name.Name = "txt_name";
+            txt_name.Size = new Size(178, 26);
+            txt_name.TabIndex = 13;
             // 
             // txt_duracion
             // 
-            this.txt_duracion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txt_duracion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_duracion.Location = new System.Drawing.Point(293, 72);
-            this.txt_duracion.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txt_duracion.Name = "txt_duracion";
-            this.txt_duracion.Size = new System.Drawing.Size(157, 26);
-            this.txt_duracion.TabIndex = 25;
+            txt_duracion.Location = new Point(259, 59);
+            txt_duracion.Name = "txt_duracion";
+            txt_duracion.Size = new Size(120, 23);
+            txt_duracion.TabIndex = 25;
             // 
             // list_listing
             // 
-            this.list_listing.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.list_listing.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.list_listing.FormattingEnabled = true;
-            this.list_listing.Location = new System.Drawing.Point(295, 159);
-            this.list_listing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.list_listing.Name = "list_listing";
-            this.list_listing.Size = new System.Drawing.Size(138, 28);
-            this.list_listing.TabIndex = 26;
+            list_listing.FormattingEnabled = true;
+            list_listing.Location = new Point(258, 119);
+            list_listing.Name = "list_listing";
+            list_listing.Size = new Size(121, 23);
+            list_listing.TabIndex = 26;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(293, 135);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 20);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Cartelera";
+            label4.AutoSize = true;
+            label4.Location = new Point(256, 101);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 15);
+            label4.TabIndex = 27;
+            label4.Text = "Cartelera";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.room_listing);
-            this.panel1.Controls.Add(this.picture_movie);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.txt_name);
-            this.panel1.Controls.Add(this.list_listing);
-            this.panel1.Controls.Add(this.txt_publico);
-            this.panel1.Controls.Add(this.txt_duracion);
-            this.panel1.Controls.Add(this.btn_save);
-            this.panel1.Controls.Add(this.passImage);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(14, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(469, 433);
-            this.panel1.TabIndex = 28;
+            panel1.Controls.Add(panel_picture);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(room_listing);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(txt_name);
+            panel1.Controls.Add(list_listing);
+            panel1.Controls.Add(txt_publico);
+            panel1.Controls.Add(txt_duracion);
+            panel1.Controls.Add(btn_save);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label3);
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(410, 325);
+            panel1.TabIndex = 28;
+            // 
+            // panel_picture
+            // 
+            panel_picture.AllowDrop = true;
+            panel_picture.BackColor = Color.Silver;
+            panel_picture.BackgroundImageLayout = ImageLayout.Zoom;
+            panel_picture.Location = new Point(27, 155);
+            panel_picture.Name = "panel_picture";
+            panel_picture.Size = new Size(177, 100);
+            panel_picture.TabIndex = 32;
+            panel_picture.DragDrop += panel_picture_DragDrop;
+            panel_picture.DragEnter += panel_picture_DragEnter;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(31, 179);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Imagen";
+            label6.AutoSize = true;
+            label6.Location = new Point(27, 134);
+            label6.Name = "label6";
+            label6.Size = new Size(47, 15);
+            label6.TabIndex = 31;
+            label6.Text = "Imagen";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(293, 231);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 20);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Sala";
+            label5.AutoSize = true;
+            label5.Location = new Point(256, 173);
+            label5.Name = "label5";
+            label5.Size = new Size(28, 15);
+            label5.TabIndex = 30;
+            label5.Text = "Sala";
             // 
             // room_listing
             // 
-            this.room_listing.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.room_listing.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.room_listing.FormattingEnabled = true;
-            this.room_listing.Location = new System.Drawing.Point(295, 255);
-            this.room_listing.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.room_listing.Name = "room_listing";
-            this.room_listing.Size = new System.Drawing.Size(138, 28);
-            this.room_listing.TabIndex = 29;
-            // 
-            // picture_movie
-            // 
-            this.picture_movie.Location = new System.Drawing.Point(30, 204);
-            this.picture_movie.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picture_movie.Name = "picture_movie";
-            this.picture_movie.Size = new System.Drawing.Size(203, 148);
-            this.picture_movie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture_movie.TabIndex = 28;
-            this.picture_movie.TabStop = false;
+            room_listing.FormattingEnabled = true;
+            room_listing.Location = new Point(258, 191);
+            room_listing.Name = "room_listing";
+            room_listing.Size = new Size(121, 23);
+            room_listing.TabIndex = 29;
             // 
             // MovieManagment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1166, 477);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.btn_delete);
-            this.Controls.Add(this.data_grid);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "MovieManagment";
-            this.Text = "MovieManagment";
-            ((System.ComponentModel.ISupportInitialize)(this.passImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_duracion)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_movie)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1020, 358);
+            Controls.Add(panel1);
+            Controls.Add(btn_update);
+            Controls.Add(btn_delete);
+            Controls.Add(data_grid);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "MovieManagment";
+            Text = "MovieManagment";
+            ((System.ComponentModel.ISupportInitialize)data_grid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txt_duracion).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        public PictureBox passImage;
         public Button btn_update;
         public Button btn_delete;
         private Label label3;
@@ -308,10 +263,10 @@
         private Label label4;
         private Panel panel1;
         private Label label5;
-        private PictureBox picture_movie;
         public NumericUpDown txt_duracion;
         public ComboBox list_listing;
         public ComboBox room_listing;
         private Label label6;
+        public Panel panel_picture;
     }
 }
