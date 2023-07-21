@@ -15,13 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Folder Include="Views\AdminViews\img\" />
   </ItemGroup>
 
   <ItemGroup>
->>>>>>> 7681a0fe88912d1e5ededf133b4028ba80e7e84d
     <PackageReference Include="MySql.Data" Version="8.1.0" />
   </ItemGroup>
 

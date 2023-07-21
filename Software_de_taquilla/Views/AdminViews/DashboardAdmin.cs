@@ -19,8 +19,8 @@ namespace Software_de_taquilla.Views.AdminViews
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            pictureBox1.TabStop = false; // Deshabilitar el enfoque del control para evitar que se muestre el marco cuando se selecciona.
-            pictureBox1.BorderStyle = BorderStyle.None;
+            PctPerfil.TabStop = false; // Deshabilitar el enfoque del control para evitar que se muestre el marco cuando se selecciona.
+            PctPerfil.BorderStyle = BorderStyle.None;
         }
     }
 }

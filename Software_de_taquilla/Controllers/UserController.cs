@@ -139,6 +139,7 @@ namespace Software_de_taquilla.Controllers
 
                 UserDao user = new UserDao();
                 user.deleteUser(id);
+                this.fillDataGrid();
             }
         }
     }
