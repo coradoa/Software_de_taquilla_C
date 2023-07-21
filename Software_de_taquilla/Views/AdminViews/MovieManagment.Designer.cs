@@ -45,6 +45,7 @@
             label5 = new Label();
             room_listing = new ComboBox();
             picture_movie = new PictureBox();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)passImage).BeginInit();
             ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txt_duracion).BeginInit();
@@ -68,7 +69,7 @@
             btn_update.FlatStyle = FlatStyle.Flat;
             btn_update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_update.ForeColor = Color.White;
-            btn_update.Location = new Point(589, 314);
+            btn_update.Location = new Point(743, 314);
             btn_update.Name = "btn_update";
             btn_update.Size = new Size(103, 23);
             btn_update.TabIndex = 22;
@@ -82,7 +83,7 @@
             btn_delete.FlatStyle = FlatStyle.Flat;
             btn_delete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = Color.White;
-            btn_delete.Location = new Point(698, 314);
+            btn_delete.Location = new Point(898, 314);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(103, 23);
             btn_delete.TabIndex = 21;
@@ -92,7 +93,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(26, 135);
+            label3.Location = new Point(259, 31);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 19;
@@ -123,7 +124,7 @@
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(333, 223);
+            btn_save.Location = new Point(26, 288);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(178, 23);
             btn_save.TabIndex = 16;
@@ -135,11 +136,11 @@
             data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_grid.Location = new Point(589, 12);
+            data_grid.Location = new Point(438, 17);
             data_grid.Name = "data_grid";
             data_grid.RowTemplate.Height = 25;
             data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            data_grid.Size = new Size(641, 283);
+            data_grid.Size = new Size(564, 283);
             data_grid.TabIndex = 15;
             // 
             // txt_publico
@@ -163,7 +164,7 @@
             // 
             // txt_duracion
             // 
-            txt_duracion.Location = new Point(26, 163);
+            txt_duracion.Location = new Point(259, 59);
             txt_duracion.Name = "txt_duracion";
             txt_duracion.Size = new Size(120, 23);
             txt_duracion.TabIndex = 25;
@@ -171,7 +172,7 @@
             // list_listing
             // 
             list_listing.FormattingEnabled = true;
-            list_listing.Location = new Point(25, 223);
+            list_listing.Location = new Point(258, 119);
             list_listing.Name = "list_listing";
             list_listing.Size = new Size(121, 23);
             list_listing.TabIndex = 26;
@@ -179,7 +180,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(23, 205);
+            label4.Location = new Point(256, 101);
             label4.Name = "label4";
             label4.Size = new Size(54, 15);
             label4.TabIndex = 27;
@@ -187,6 +188,7 @@
             // 
             // panel1
             // 
+            panel1.Controls.Add(label6);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(room_listing);
             panel1.Controls.Add(picture_movie);
@@ -202,13 +204,13 @@
             panel1.Controls.Add(label3);
             panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(551, 325);
+            panel1.Size = new Size(410, 325);
             panel1.TabIndex = 28;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(26, 273);
+            label5.Location = new Point(256, 173);
             label5.Name = "label5";
             label5.Size = new Size(28, 15);
             label5.TabIndex = 30;
@@ -217,29 +219,39 @@
             // room_listing
             // 
             room_listing.FormattingEnabled = true;
-            room_listing.Location = new Point(28, 291);
+            room_listing.Location = new Point(258, 191);
             room_listing.Name = "room_listing";
             room_listing.Size = new Size(121, 23);
             room_listing.TabIndex = 29;
             // 
             // picture_movie
             // 
-            picture_movie.Location = new Point(284, 31);
+            picture_movie.Location = new Point(26, 153);
             picture_movie.Name = "picture_movie";
-            picture_movie.Size = new Size(247, 181);
+            picture_movie.Size = new Size(178, 111);
             picture_movie.SizeMode = PictureBoxSizeMode.Zoom;
             picture_movie.TabIndex = 28;
             picture_movie.TabStop = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(27, 134);
+            label6.Name = "label6";
+            label6.Size = new Size(47, 15);
+            label6.TabIndex = 31;
+            label6.Text = "Imagen";
             // 
             // MovieManagment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1251, 366);
+            ClientSize = new Size(1020, 358);
             Controls.Add(panel1);
             Controls.Add(btn_update);
             Controls.Add(btn_delete);
             Controls.Add(data_grid);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MovieManagment";
             Text = "MovieManagment";
             ((System.ComponentModel.ISupportInitialize)passImage).EndInit();
@@ -270,5 +282,6 @@
         public NumericUpDown txt_duracion;
         public ComboBox list_listing;
         public ComboBox room_listing;
+        private Label label6;
     }
 }

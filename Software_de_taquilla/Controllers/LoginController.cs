@@ -27,8 +27,8 @@ namespace Software_de_taquilla.Controllers
             {
                 this.view.printMessage("¡Bienvenido!");
                 this.view.Visible = false;
-                UserManagment form = new UserManagment();
-                form.ShowDialog();
+                DashboardAdmin admin = new DashboardAdmin();
+                admin.ShowDialog();
                 this.view.Visible = true;
             }
             else
