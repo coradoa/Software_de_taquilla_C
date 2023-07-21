@@ -16,7 +16,7 @@ namespace Software_de_taquilla.Views
         public Login()
         {
             InitializeComponent();
-            UserController usr = new UserController(this);
+            LoginController usr = new LoginController(this);
         }
 
         private void Login_Load(object sender, EventArgs e)

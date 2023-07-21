@@ -20,5 +20,12 @@ namespace Software_de_taquilla.Models.Dto
             this.pass = pass;
             this.rol = rol;
         }
+
+        public User(string name, string pass, int rol)
+        {
+            this.name = name;
+            this.pass = pass;
+            this.rol = rol;
+        }
     }
 }
