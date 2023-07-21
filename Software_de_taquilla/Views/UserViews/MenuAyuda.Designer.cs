@@ -33,11 +33,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.txt_telefonoayuda = new System.Windows.Forms.TextBox();
             this.txt_correoayuda = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +73,7 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Image = global::Software_de_taquilla.Properties.Resources.ask1;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(154, 147);
             this.button2.Name = "button2";
@@ -86,6 +87,7 @@
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Image = global::Software_de_taquilla.Properties.Resources.dictionary1;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.Location = new System.Drawing.Point(156, 228);
             this.button3.Name = "button3";
@@ -107,6 +109,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(633, 151);
             this.panel1.TabIndex = 8;
+            // 
+            // button4
+            // 
+            this.button4.Enabled = false;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = global::Software_de_taquilla.Properties.Resources.headphones1;
+            this.button4.Location = new System.Drawing.Point(3, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(59, 70);
+            this.button4.TabIndex = 5;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // txt_telefonoayuda
             // 
@@ -147,17 +161,6 @@
             this.label3.Size = new System.Drawing.Size(569, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Si tienes otra pregunta, te contactariamos via correo electrónico o teléfono.";
-            // 
-            // button4
-            // 
-            this.button4.Enabled = false;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(3, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(59, 70);
-            this.button4.TabIndex = 5;
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // MenuAyuda
             // 

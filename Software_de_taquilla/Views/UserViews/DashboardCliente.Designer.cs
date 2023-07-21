@@ -64,7 +64,7 @@
             // 
             btnSalir.FlatAppearance.BorderSize = 0;
             btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSalir.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnSalir.ForeColor = SystemColors.Control;
             btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.MiddleRight;
@@ -82,7 +82,7 @@
             btnMenuAyuda.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
             btnMenuAyuda.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
             btnMenuAyuda.FlatStyle = FlatStyle.Flat;
-            btnMenuAyuda.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnMenuAyuda.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnMenuAyuda.ForeColor = SystemColors.Control;
             btnMenuAyuda.Image = (Image)resources.GetObject("btnMenuAyuda.Image");
             btnMenuAyuda.ImageAlign = ContentAlignment.MiddleLeft;
@@ -100,7 +100,7 @@
             btnCobros.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
             btnCobros.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
             btnCobros.FlatStyle = FlatStyle.Flat;
-            btnCobros.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCobros.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCobros.ForeColor = SystemColors.Control;
             btnCobros.Image = (Image)resources.GetObject("btnCobros.Image");
             btnCobros.ImageAlign = ContentAlignment.MiddleLeft;
@@ -118,7 +118,7 @@
             btnCartelera.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
             btnCartelera.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
             btnCartelera.FlatStyle = FlatStyle.Flat;
-            btnCartelera.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnCartelera.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnCartelera.ForeColor = SystemColors.Control;
             btnCartelera.Image = (Image)resources.GetObject("btnCartelera.Image");
             btnCartelera.ImageAlign = ContentAlignment.MiddleLeft;
@@ -136,7 +136,7 @@
             btnInicio.FlatAppearance.MouseDownBackColor = Color.FromArgb(36, 171, 218);
             btnInicio.FlatAppearance.MouseOverBackColor = Color.FromArgb(36, 171, 218);
             btnInicio.FlatStyle = FlatStyle.Flat;
-            btnInicio.Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnInicio.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnInicio.ForeColor = SystemColors.Control;
             btnInicio.Image = (Image)resources.GetObject("btnInicio.Image");
             btnInicio.ImageAlign = ContentAlignment.MiddleLeft;
@@ -162,11 +162,11 @@
             // lblEstado
             // 
             lblEstado.AutoSize = true;
-            lblEstado.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEstado.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEstado.ForeColor = Color.FromArgb(43, 105, 130);
             lblEstado.Location = new Point(124, 99);
             lblEstado.Name = "lblEstado";
-            lblEstado.Size = new Size(44, 15);
+            lblEstado.Size = new Size(52, 17);
             lblEstado.TabIndex = 3;
             lblEstado.Text = "Estado";
             lblEstado.Click += label3_Click;
@@ -174,11 +174,11 @@
             // lblPerfil
             // 
             lblPerfil.AutoSize = true;
-            lblPerfil.Font = new Font("Times New Roman", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblPerfil.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblPerfil.ForeColor = SystemColors.Control;
             lblPerfil.Location = new Point(124, 74);
             lblPerfil.Name = "lblPerfil";
-            lblPerfil.Size = new Size(49, 15);
+            lblPerfil.Size = new Size(54, 17);
             lblPerfil.TabIndex = 2;
             lblPerfil.Text = "Usuario";
             lblPerfil.Click += label2_Click;
