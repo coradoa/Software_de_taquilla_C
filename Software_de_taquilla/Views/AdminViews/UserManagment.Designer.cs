@@ -46,7 +46,7 @@
             // txt_name
             // 
             txt_name.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_name.Location = new Point(39, 42);
+            txt_name.Location = new Point(44, 77);
             txt_name.Multiline = true;
             txt_name.Name = "txt_name";
             txt_name.Size = new Size(178, 31);
@@ -55,7 +55,7 @@
             // txt_contrasenia
             // 
             txt_contrasenia.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_contrasenia.Location = new Point(39, 105);
+            txt_contrasenia.Location = new Point(44, 140);
             txt_contrasenia.Multiline = true;
             txt_contrasenia.Name = "txt_contrasenia";
             txt_contrasenia.PasswordChar = '*';
@@ -67,11 +67,11 @@
             data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            data_grid.Location = new Point(277, 42);
+            data_grid.Location = new Point(291, 47);
             data_grid.Name = "data_grid";
             data_grid.RowTemplate.Height = 25;
             data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            data_grid.Size = new Size(536, 226);
+            data_grid.Size = new Size(682, 296);
             data_grid.TabIndex = 4;
             // 
             // btn_save
@@ -81,7 +81,7 @@
             btn_save.FlatStyle = FlatStyle.Flat;
             btn_save.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_save.ForeColor = Color.White;
-            btn_save.Location = new Point(39, 245);
+            btn_save.Location = new Point(44, 280);
             btn_save.Name = "btn_save";
             btn_save.Size = new Size(178, 23);
             btn_save.TabIndex = 5;
@@ -91,7 +91,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(45, 19);
+            label1.Location = new Point(50, 54);
             label1.Name = "label1";
             label1.Size = new Size(47, 15);
             label1.TabIndex = 6;
@@ -100,7 +100,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(45, 87);
+            label2.Location = new Point(50, 122);
             label2.Name = "label2";
             label2.Size = new Size(67, 15);
             label2.TabIndex = 7;
@@ -109,7 +109,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(45, 149);
+            label3.Location = new Point(50, 184);
             label3.Name = "label3";
             label3.Size = new Size(24, 15);
             label3.TabIndex = 8;
@@ -119,7 +119,7 @@
             // 
             role_list.FlatStyle = FlatStyle.Flat;
             role_list.FormattingEnabled = true;
-            role_list.Location = new Point(39, 171);
+            role_list.Location = new Point(44, 206);
             role_list.Name = "role_list";
             role_list.Size = new Size(178, 23);
             role_list.TabIndex = 9;
@@ -131,7 +131,7 @@
             btn_delete.FlatStyle = FlatStyle.Flat;
             btn_delete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_delete.ForeColor = Color.White;
-            btn_delete.Location = new Point(710, 284);
+            btn_delete.Location = new Point(868, 427);
             btn_delete.Name = "btn_delete";
             btn_delete.Size = new Size(103, 23);
             btn_delete.TabIndex = 10;
@@ -145,7 +145,7 @@
             btn_update.FlatStyle = FlatStyle.Flat;
             btn_update.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btn_update.ForeColor = Color.White;
-            btn_update.Location = new Point(552, 284);
+            btn_update.Location = new Point(710, 427);
             btn_update.Name = "btn_update";
             btn_update.Size = new Size(103, 23);
             btn_update.TabIndex = 11;
@@ -155,7 +155,7 @@
             // passImage
             // 
             passImage.Image = Properties.Resources.ojo1;
-            passImage.Location = new Point(222, 108);
+            passImage.Location = new Point(227, 143);
             passImage.Name = "passImage";
             passImage.Size = new Size(17, 27);
             passImage.SizeMode = PictureBoxSizeMode.Zoom;
@@ -166,7 +166,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(861, 328);
+            ClientSize = new Size(1020, 498);
             Controls.Add(passImage);
             Controls.Add(btn_update);
             Controls.Add(btn_delete);
@@ -178,6 +178,7 @@
             Controls.Add(data_grid);
             Controls.Add(txt_contrasenia);
             Controls.Add(txt_name);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "UserManagment";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "UserManagment";
