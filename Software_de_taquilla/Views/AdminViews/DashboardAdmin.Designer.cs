@@ -104,7 +104,6 @@
             this.btnCartelera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCartelera.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCartelera.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCartelera.Image = global::Software_de_taquilla.Properties.Resources.report2;
             this.btnCartelera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCartelera.Location = new System.Drawing.Point(0, 245);
             this.btnCartelera.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

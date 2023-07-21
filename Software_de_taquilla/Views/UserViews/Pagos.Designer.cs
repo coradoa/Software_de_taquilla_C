@@ -184,7 +184,6 @@
             this.button1.Enabled = false;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::Software_de_taquilla.Properties.Resources.visa;
             this.button1.Location = new System.Drawing.Point(448, 195);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(53, 28);
@@ -247,7 +246,6 @@
             this.button6.Enabled = false;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Image = global::Software_de_taquilla.Properties.Resources.visa;
             this.button6.Location = new System.Drawing.Point(43, 369);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(53, 28);

@@ -154,7 +154,7 @@
             // 
             // passImage
             // 
-            passImage.Image = Properties.Resources.ojo;
+            passImage.Image = Properties.Resources.ojo1;
             passImage.Location = new Point(222, 108);
             passImage.Name = "passImage";
             passImage.Size = new Size(17, 27);
