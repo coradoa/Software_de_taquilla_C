@@ -2,6 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+ 
+    <Compile Update="Views\AdminViews\Cartelera.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\AdminViews\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -18,6 +22,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\AdminViews\UserManagment.cs">
+
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\ClientView.cs">
@@ -32,10 +37,24 @@
     <Compile Update="Views\UserViews\DashboardCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+
+    <Compile Update="Views\UserViews\CarteleraUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+
     <Compile Update="Views\UserViews\MenuAyuda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\UserViews\Pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\SedesHorariosCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\SedesHorariosJutiapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\SedesHorariosXela.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
