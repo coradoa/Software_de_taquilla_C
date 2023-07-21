@@ -193,6 +193,7 @@ namespace Software_de_taquilla.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap manual1 {
             get {
                 object obj = ResourceManager.GetObject("manual1", resourceCulture);
@@ -256,6 +257,11 @@ namespace Software_de_taquilla.Properties {
         internal static System.Drawing.Bitmap visa {
             get {
                 object obj = ResourceManager.GetObject("visa", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap ojo {
+            get {
+                object obj = ResourceManager.GetObject("ojo", resourceCulture);
+>>>>>>> 7681a0fe88912d1e5ededf133b4028ba80e7e84d
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
