@@ -104,6 +104,6 @@
         private DateTimePicker dtFecha;
         private Label label2;
         private Label label1;
-        private FlowLayoutPanel flow_container;
+        public FlowLayoutPanel flow_container;
     }
 }

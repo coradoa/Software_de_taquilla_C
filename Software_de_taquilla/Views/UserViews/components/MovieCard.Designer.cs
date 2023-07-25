@@ -39,6 +39,7 @@
             picture.Location = new Point(14, 48);
             picture.Name = "picture";
             picture.Size = new Size(201, 163);
+            picture.SizeMode = PictureBoxSizeMode.StretchImage;
             picture.TabIndex = 0;
             picture.TabStop = false;
             // 
@@ -56,7 +57,7 @@
             // 
             time_line.Location = new Point(16, 217);
             time_line.Name = "time_line";
-            time_line.Size = new Size(199, 8);
+            time_line.Size = new Size(199, 2);
             time_line.Step = 60;
             time_line.Style = ProgressBarStyle.Continuous;
             time_line.TabIndex = 2;
@@ -71,7 +72,6 @@
             Controls.Add(picture);
             Name = "MovieCard";
             Size = new Size(226, 245);
-            Load += MovieCard_Load;
             ((System.ComponentModel.ISupportInitialize)picture).EndInit();
             ResumeLayout(false);
             PerformLayout();

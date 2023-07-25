@@ -6,20 +6,18 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Software_de_taquilla.Models.Dto;
 using System.Windows.Forms;
 
 namespace Software_de_taquilla.Views.UserViews.components
 {
     public partial class MovieCard : UserControl
     {
-        public MovieCard()
+        public MovieCard(Movie movie)
         {
             InitializeComponent();
-        }
-
-        private void MovieCard_Load(object sender, EventArgs e)
-        {
-
+            label1.Text = movie.name;
+            picture.Image = Image.FromFile("./images/" + movie.image);
         }
     }
 }

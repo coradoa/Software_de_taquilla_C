@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Software_de_taquilla.Views.UserViews.components;
+using Software_de_taquilla.Controllers;
 
 namespace Software_de_taquilla.Views.UserViews
 {
@@ -16,15 +16,7 @@ namespace Software_de_taquilla.Views.UserViews
         public Listing()
         {
             InitializeComponent();
-            this.fillContainer();
-        }
-
-        public void fillContainer()
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                flow_container.Controls.Add(new MovieCard());
-            }
+            ListingController controller = new ListingController(this);
         }
     }
 }
