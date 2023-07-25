@@ -49,9 +49,8 @@
             this.txt_name.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_name.Location = new System.Drawing.Point(50, 103);
             this.txt_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_name.Multiline = true;
             this.txt_name.Name = "txt_name";
-            this.txt_name.Size = new System.Drawing.Size(203, 40);
+            this.txt_name.Size = new System.Drawing.Size(203, 30);
             this.txt_name.TabIndex = 0;
             // 
             // txt_contrasenia
@@ -60,10 +59,9 @@
             this.txt_contrasenia.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_contrasenia.Location = new System.Drawing.Point(50, 187);
             this.txt_contrasenia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_contrasenia.Multiline = true;
             this.txt_contrasenia.Name = "txt_contrasenia";
             this.txt_contrasenia.PasswordChar = '*';
-            this.txt_contrasenia.Size = new System.Drawing.Size(203, 40);
+            this.txt_contrasenia.Size = new System.Drawing.Size(203, 30);
             this.txt_contrasenia.TabIndex = 1;
             // 
             // data_grid

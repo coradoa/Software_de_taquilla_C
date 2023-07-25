@@ -70,5 +70,10 @@ namespace Software_de_taquilla.Views
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
