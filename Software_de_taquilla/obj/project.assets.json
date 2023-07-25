@@ -1785,40 +1785,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Doris\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> d9cbde148faedf8330439aab24184719474d1d51
+    "C:\\Users\\d_car\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Doris\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+      "projectUniqueName": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
       "projectName": "Software_de_taquilla",
-      "projectPath": "C:\\Users\\Doris\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-      "packagesPath": "C:\\Users\\Doris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Doris\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-      "projectName": "Software_de_taquilla",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
->>>>>>> d9cbde148faedf8330439aab24184719474d1d51
+      "projectPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+      "packagesPath": "C:\\Users\\d_car\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\Doris\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> d9cbde148faedf8330439aab24184719474d1d51
+        "C:\\Users\\d_car\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1868,11 +1847,7 @@
             "privateAssets": "none"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> d9cbde148faedf8330439aab24184719474d1d51
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -1881,7 +1856,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Doris\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problema al leer el archivo de caché C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
