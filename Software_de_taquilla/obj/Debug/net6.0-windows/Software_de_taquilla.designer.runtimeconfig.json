@@ -12,19 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-      "C:\\Users\\Doris\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Doris\\.nuget\\packages"
-=======
       "C:\\Users\\olste\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\olste\\.nuget\\packages"
->>>>>>> d33fbeae9f641300c71909c83dd7b1f694a28d0e
-=======
-      "C:\\Users\\Usuario\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Usuario\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
->>>>>>> d9cbde148faedf8330439aab24184719474d1d51
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
