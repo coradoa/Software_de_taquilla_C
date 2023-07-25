@@ -45,6 +45,7 @@
             // 
             // txt_name
             // 
+<<<<<<< HEAD
             txt_name.BackColor = Color.WhiteSmoke;
             txt_name.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txt_name.Location = new Point(44, 77);
@@ -63,6 +64,26 @@
             txt_contrasenia.PasswordChar = '*';
             txt_contrasenia.Size = new Size(178, 31);
             txt_contrasenia.TabIndex = 1;
+=======
+            this.txt_name.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_name.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_name.Location = new System.Drawing.Point(50, 103);
+            this.txt_name.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_name.Name = "txt_name";
+            this.txt_name.Size = new System.Drawing.Size(203, 30);
+            this.txt_name.TabIndex = 0;
+            // 
+            // txt_contrasenia
+            // 
+            this.txt_contrasenia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt_contrasenia.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_contrasenia.Location = new System.Drawing.Point(50, 187);
+            this.txt_contrasenia.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_contrasenia.Name = "txt_contrasenia";
+            this.txt_contrasenia.PasswordChar = '*';
+            this.txt_contrasenia.Size = new System.Drawing.Size(203, 30);
+            this.txt_contrasenia.TabIndex = 1;
+>>>>>>> d0c5f11d3d12cf797a9119a24c32685825e69291
             // 
             // data_grid
             // 

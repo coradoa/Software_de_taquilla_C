@@ -41,6 +41,7 @@
             // 
             // txt_user
             // 
+<<<<<<< HEAD
             txt_user.BackColor = Color.White;
             txt_user.Font = new Font("Times New Roman", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
             txt_user.ForeColor = SystemColors.WindowFrame;
@@ -62,6 +63,28 @@
             txt_pass.PlaceholderText = "Contraseña";
             txt_pass.Size = new Size(229, 30);
             txt_pass.TabIndex = 1;
+=======
+            this.txt_user.BackColor = System.Drawing.Color.White;
+            this.txt_user.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_user.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_user.Location = new System.Drawing.Point(619, 165);
+            this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_user.Name = "txt_user";
+            this.txt_user.Size = new System.Drawing.Size(262, 28);
+            this.txt_user.TabIndex = 0;
+            this.txt_user.Text = "Usuario";
+            // 
+            // txt_pass
+            // 
+            this.txt_pass.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_pass.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_pass.Location = new System.Drawing.Point(616, 259);
+            this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_pass.Name = "txt_pass";
+            this.txt_pass.Size = new System.Drawing.Size(261, 28);
+            this.txt_pass.TabIndex = 1;
+            this.txt_pass.Text = "Contraseña";
+>>>>>>> d0c5f11d3d12cf797a9119a24c32685825e69291
             // 
             // btn_login
             // 
@@ -79,6 +102,7 @@
             // 
             // panel1
             // 
+<<<<<<< HEAD
             panel1.BackColor = Color.FromArgb(36, 171, 218);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
@@ -88,6 +112,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(427, 376);
             panel1.TabIndex = 3;
+=======
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(171)))), ((int)(((byte)(218)))));
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(488, 501);
+            this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+>>>>>>> d0c5f11d3d12cf797a9119a24c32685825e69291
             // 
             // label3
             // 

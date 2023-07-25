@@ -19,6 +19,65 @@ namespace Software_de_taquilla.Views
             LoginController usr = new LoginController(this);
         }
 
+<<<<<<< HEAD
         public void printMessage(string msg) { MessageBox.Show(msg); }
+=======
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        public void printMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_user_Click(object sender, EventArgs e)
+        {
+            txt_user.Text = "";
+            txt_user.ForeColor = Color.Black;
+        }
+
+        private void txt_user_Leave(object sender, EventArgs e)
+        {
+            txt_user.Text = "Usuario";
+            txt_user.ForeColor = SystemColors.WindowFrame;
+        }
+
+        private void txt_pass_Click_1(object sender, EventArgs e)
+        {
+            txt_pass.Text = "";
+            txt_pass.ForeColor = Color.Black;
+            txt_pass.PasswordChar = '*';
+
+        }
+
+        private void txt_pass_Leave_1(object sender, EventArgs e)
+        {
+            txt_pass.Text = "Contraseña";
+            txt_pass.ForeColor = SystemColors.WindowFrame;
+            txt_pass.PasswordChar = '\0';
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+>>>>>>> d0c5f11d3d12cf797a9119a24c32685825e69291
     }
 }
