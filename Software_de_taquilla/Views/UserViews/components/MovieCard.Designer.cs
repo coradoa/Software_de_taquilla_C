@@ -79,8 +79,8 @@
 
         #endregion
 
-        private PictureBox picture;
-        private Label label1;
-        private ProgressBar time_line;
+        public PictureBox picture;
+        public Label label1;
+        public ProgressBar time_line;
     }
 }
