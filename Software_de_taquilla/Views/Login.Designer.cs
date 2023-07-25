@@ -45,9 +45,8 @@
             this.txt_user.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_user.Location = new System.Drawing.Point(619, 165);
             this.txt_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_user.Multiline = true;
             this.txt_user.Name = "txt_user";
-            this.txt_user.Size = new System.Drawing.Size(262, 37);
+            this.txt_user.Size = new System.Drawing.Size(262, 28);
             this.txt_user.TabIndex = 0;
             this.txt_user.Text = "Usuario";
             // 
@@ -57,9 +56,8 @@
             this.txt_pass.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txt_pass.Location = new System.Drawing.Point(616, 259);
             this.txt_pass.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_pass.Multiline = true;
             this.txt_pass.Name = "txt_pass";
-            this.txt_pass.Size = new System.Drawing.Size(261, 39);
+            this.txt_pass.Size = new System.Drawing.Size(261, 28);
             this.txt_pass.TabIndex = 1;
             this.txt_pass.Text = "Contraseña";
             // 
@@ -88,6 +86,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(488, 501);
             this.panel1.TabIndex = 3;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
