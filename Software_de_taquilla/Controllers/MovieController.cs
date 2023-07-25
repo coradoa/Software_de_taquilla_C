@@ -49,7 +49,7 @@ namespace Software_de_taquilla.Controllers
 
         public void saveImage(string path, string image)
         {
-            File.Copy(path, "./images/" + image);
+            File.Copy(path, "./../../../images/" + image);
         }
 
 

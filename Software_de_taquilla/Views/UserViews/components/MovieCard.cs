@@ -17,7 +17,7 @@ namespace Software_de_taquilla.Views.UserViews.components
         {
             InitializeComponent();
             label1.Text = movie.name;
-            picture.Image = Image.FromFile("./images/" + movie.image);
+            picture.Image = Image.FromFile("./../../../images/" + movie.image);
         }
     }
 }
