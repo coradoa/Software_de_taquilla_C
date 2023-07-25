@@ -7,29 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Views.UserViews.components;
 
 namespace Software_de_taquilla.Views.UserViews
 {
-    public partial class Form1 : Form
+    public partial class Listing : Form
     {
-        public Form1()
+        public Listing()
         {
             InitializeComponent();
+            this.fillContainer();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void fillContainer()
         {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            for (int i = 0; i < 5; i++)
+            {
+                flow_container.Controls.Add(new MovieCard());
+            }
         }
     }
 }

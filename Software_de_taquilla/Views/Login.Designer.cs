@@ -35,6 +35,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            combo_role = new ComboBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -69,7 +70,7 @@
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.Font = new Font("Bookman Old Style", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             btn_login.ForeColor = Color.White;
-            btn_login.Location = new Point(539, 266);
+            btn_login.Location = new Point(539, 274);
             btn_login.Name = "btn_login";
             btn_login.Size = new Size(231, 25);
             btn_login.TabIndex = 2;
@@ -122,12 +123,25 @@
             label1.TabIndex = 4;
             label1.Text = "LOGIN";
             // 
+            // combo_role
+            // 
+            combo_role.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_role.FlatStyle = FlatStyle.Popup;
+            combo_role.ForeColor = SystemColors.GrayText;
+            combo_role.FormattingEnabled = true;
+            combo_role.Items.AddRange(new object[] { "Administrador", "Empleado", "Cliente" });
+            combo_role.Location = new Point(660, 230);
+            combo_role.Name = "combo_role";
+            combo_role.Size = new Size(108, 23);
+            combo_role.TabIndex = 5;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(864, 376);
+            Controls.Add(combo_role);
             Controls.Add(label1);
             Controls.Add(panel1);
             Controls.Add(btn_login);
@@ -149,5 +163,6 @@
         private Label label2;
         public TextBox txt_user;
         public TextBox txt_pass;
+        public ComboBox combo_role;
     }
 }

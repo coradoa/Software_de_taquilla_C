@@ -7,6 +7,10 @@ using Org.BouncyCastle.Asn1.Mozilla;
 using Software_de_taquilla.Views.AdminViews;
 using Software_de_taquilla.Models.Dao;
 using Software_de_taquilla.Models.Dto;
+using System.IO;
+using System.Text;
+using System.Linq;
+
 
 namespace Software_de_taquilla.Controllers
 {
@@ -30,10 +34,21 @@ namespace Software_de_taquilla.Controllers
             string image = view.image_location;
             MovieDao dao = new MovieDao();
             dao.insertMovie(name, image, d, listing, room, publico);
+            this.saveImage(image);
             view.printMessage("Pelicula Agregada");
             view.clearTextBox();
             this.fillDataGrid();
         }
+
+        public void saveImage(string image)
+        {
+            int pos = image.LastIndexOf("\\");
+            File.Copy(image, "./images/" + image.Substring(pos).Remove(0, 1));
+        }
+
+
+
+
         public void buildComponent(Object sender, EventArgs e)
         {
             this.fillDataGrid();
