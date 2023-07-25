@@ -46,11 +46,9 @@
             txt_user.Location = new Point(542, 124);
             txt_user.Multiline = true;
             txt_user.Name = "txt_user";
+            txt_user.PlaceholderText = "Usuario";
             txt_user.Size = new Size(230, 29);
             txt_user.TabIndex = 0;
-            txt_user.Text = "Usuario";
-            txt_user.MouseClick += txt_user_MouseClick;
-            txt_user.MouseLeave += txt_user_MouseLeave;
             // 
             // txt_pass
             // 
@@ -59,15 +57,14 @@
             txt_pass.Location = new Point(539, 194);
             txt_pass.Multiline = true;
             txt_pass.Name = "txt_pass";
+            txt_pass.PasswordChar = '*';
+            txt_pass.PlaceholderText = "Contraseña";
             txt_pass.Size = new Size(229, 30);
             txt_pass.TabIndex = 1;
-            txt_pass.Text = "Contraseña";
-            txt_pass.MouseClick += txt_pass_MouseClick;
-            txt_pass.MouseLeave += txt_pass_MouseLeave;
             // 
             // btn_login
             // 
-            btn_login.BackColor = Color.DarkSlateGray;
+            btn_login.BackColor = Color.FromArgb(36, 171, 218);
             btn_login.FlatAppearance.BorderSize = 0;
             btn_login.FlatStyle = FlatStyle.Flat;
             btn_login.Font = new Font("Bookman Old Style", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
