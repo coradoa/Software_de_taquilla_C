@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
   },
   "projects": {
@@ -19,6 +20,22 @@
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "projectName": "Software_de_taquilla",
+        "projectPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "packagesPath": "C:\\Users\\olste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\olste\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 4a33455e018f99d94495a2f8c0626fb65732b959
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +85,11 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> 4a33455e018f99d94495a2f8c0626fb65732b959
         }
       }
     }
