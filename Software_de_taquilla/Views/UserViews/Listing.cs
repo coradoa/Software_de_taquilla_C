@@ -7,29 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Controllers;
 
 namespace Software_de_taquilla.Views.UserViews
 {
-    public partial class Form1 : Form
+    public partial class Listing : Form
     {
-        public Form1()
+        public Listing()
         {
             InitializeComponent();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            ListingController controller = new ListingController(this);
         }
     }
 }

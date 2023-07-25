@@ -19,6 +19,9 @@ namespace Software_de_taquilla.Views
             LoginController usr = new LoginController(this);
         }
 
+<<<<<<< HEAD
+        public void printMessage(string msg) { MessageBox.Show(msg); }
+=======
         private void Login_Load(object sender, EventArgs e)
         {
 
@@ -75,5 +78,6 @@ namespace Software_de_taquilla.Views
         {
 
         }
+>>>>>>> d0c5f11d3d12cf797a9119a24c32685825e69291
     }
 }
