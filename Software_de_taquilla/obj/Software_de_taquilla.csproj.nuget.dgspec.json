@@ -1,42 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
   },
   "projects": {
-    "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {
+    "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "projectUniqueName": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
         "projectName": "Software_de_taquilla",
-        "projectPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-        "packagesPath": "C:\\Users\\d_car\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
-=======
-    "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-        "projectName": "Software_de_taquilla",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
->>>>>>> 9ebdcf2971686cbdf2db429bdc66e287a81b7b29
+        "projectPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+        "packagesPath": "C:\\Users\\olste\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\d_car\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> 9ebdcf2971686cbdf2db429bdc66e287a81b7b29
+          "C:\\Users\\olste\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +64,7 @@
               "privateAssets": "none"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
->>>>>>> 9ebdcf2971686cbdf2db429bdc66e287a81b7b29
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
