@@ -13,8 +13,11 @@ namespace Software_de_taquilla.Views.UserViews.components
 {
     public partial class MovieCard : UserControl
     {
-        public MovieCard(Movie movie)
+        public int h, m;
+        public MovieCard(Movie movie, int h, int m)
         {
+            this.h = h;
+            this.m = m;
             InitializeComponent();
             label1.Text = movie.name;
             string imagePath = @"C:\Users\d_car\OneDrive\Escritorio\UMG\4toaño\2do semestre\analisis de sistemas 2\Proyecto1\PROYECTO1\Software_de_taquilla_C\Software_de_taquilla\images\" + movie.image;
