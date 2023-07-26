@@ -25,9 +25,10 @@ namespace Software_de_taquilla.Controllers
             {
                 this.view.printMessage("¡Bienvenido!");
                 this.view.Visible = false;
-                DashboardAdmin admin = new DashboardAdmin();
+                DashboardAdmin admin = new DashboardAdmin(role);
                 admin.ShowDialog();
                 this.view.Visible = true;
+                return;
             }
             else if (role == 3)
             {
@@ -36,8 +37,8 @@ namespace Software_de_taquilla.Controllers
                 Listing listing = new Listing();
                 listing.ShowDialog();
                 this.view.Visible = true;
+                return;
             }
-
         }
 
         private void buildView(Object sender, EventArgs e)

@@ -13,8 +13,11 @@ namespace Software_de_taquilla.Views.UserViews.components
 {
     public partial class MovieCard : UserControl
     {
-        public MovieCard(Movie movie)
+        public int h, m;
+        public MovieCard(Movie movie, int h, int m)
         {
+            this.h = h;
+            this.m = m;
             InitializeComponent();
             label1.Text = movie.name;
             picture.Image = Image.FromFile("./../../../images/" + movie.image);

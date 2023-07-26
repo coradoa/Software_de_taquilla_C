@@ -23,9 +23,12 @@ namespace Software_de_taquilla.Controllers
         {
             MovieDao mydao = new MovieDao();
             List<Movie> movies = mydao.getMovies();
+            var date = DateTime.Now;
+            int h = date.Hour;
+            int m = date.Minute;
             foreach (Movie movie in movies)
             {
-                this.view.flow_container.Controls.Add(new MovieCard(movie));
+                this.view.flow_container.Controls.Add(new MovieCard(movie, h, m));
             }
         }
     }
