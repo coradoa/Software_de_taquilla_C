@@ -20,9 +20,9 @@ namespace Software_de_taquilla.Views.UserViews.components
             this.m = m;
             InitializeComponent();
             label1.Text = movie.name;
-            string imagePath = @"C:\Users\d_car\OneDrive\Escritorio\UMG\4toaño\2do semestre\analisis de sistemas 2\Proyecto1\PROYECTO1\Software_de_taquilla_C\Software_de_taquilla\images\" + movie.image;
-            picture.Image = Image.FromFile(imagePath);
-// picture.Image = Image.FromFile("./../../../images/" + movie.image);
+            //string imagePath = @"C:\Users\d_car\OneDrive\Escritorio\UMG\4toaño\2do semestre\analisis de sistemas 2\Proyecto1\PROYECTO1\Software_de_taquilla_C\Software_de_taquilla\images\" + movie.image;
+            //picture.Image = Image.FromFile(imagePath);
+            picture.Image = Image.FromFile("./../../../images/" + movie.image);
         }
     }
 }
