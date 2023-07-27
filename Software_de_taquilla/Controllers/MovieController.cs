@@ -51,20 +51,40 @@ namespace Software_de_taquilla.Controllers
         {
             File.Copy(path, "./../../../images/" + image);
         }
-
-
-
-
         public void buildComponent(Object sender, EventArgs e)
         {
             this.fillDataGrid();
+            this.fillListings();
+            this.fillRooms();
         }
+
+        public void fillRooms()
+        {
+            RoomDao dao = new RoomDao();
+            List<Room> rooms = dao.getRooms();
+            foreach (Room r in rooms)
+            {
+                this.view.room_listing.Items.Add(r.id);
+            }
+        }
+
+        public void fillListings()
+        {
+            ListingDao dao = new ListingDao();
+            List<Listing> lists = dao.getListings();
+            foreach (Listing l in lists)
+            {
+                this.view.list_listing.Items.Add(l.id);
+            }
+        }
+
+
         public void fillDataGrid()
         {
             view.data_grid.Rows.Clear();
             MovieDao dao = new MovieDao();
             List<Movie> movies = dao.getMovies();
-            view.data_grid.ColumnCount = 7;
+            view.data_grid.ColumnCount = 6;
             view.data_grid.Columns[0].Name = "ID";
             view.data_grid.Columns[1].Name = "Nombre";
             view.data_grid.Columns[2].Name = "Publico";
