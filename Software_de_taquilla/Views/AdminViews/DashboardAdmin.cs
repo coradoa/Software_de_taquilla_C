@@ -70,7 +70,7 @@ namespace Software_de_taquilla.Views.AdminViews
 
         private void btn_usuarios_Click_1(object sender, EventArgs e)
         {
-            
+            this.openForm(new UserManagment());
         }
 
         private void btnMenuAyuda_Click(object sender, EventArgs e)
