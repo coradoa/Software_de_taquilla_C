@@ -11,9 +11,9 @@ using Software_de_taquilla.Controllers;
 
 namespace Software_de_taquilla.Views.UserViews
 {
-    public partial class Listing : Form
+    public partial class ListingView : Form
     {
-        public Listing()
+        public ListingView()
         {
             InitializeComponent();
             ListingController controller = new ListingController(this);

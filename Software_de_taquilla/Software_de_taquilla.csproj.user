@@ -38,10 +38,13 @@
     <Compile Update="Views\UserViews\DashboardCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\UserViews\Listing.cs">
+    <Compile Update="Views\UserViews\ListingView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\UserViews\MenuAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\MovieSelection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\UserViews\Pagos.cs">
