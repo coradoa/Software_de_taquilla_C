@@ -28,13 +28,6 @@ namespace Software_de_taquilla.Views.UserViews.components
         }
 
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Visible = false;
-            MovieSelection mv = new MovieSelection();
-            mv.ShowDialog();
-            this.Visible = true;
-        }
 
 
         private void pictureBox1_MouseEnter(object sender, EventArgs e)
@@ -48,6 +41,16 @@ namespace Software_de_taquilla.Views.UserViews.components
         {
             this.panel_card.BorderStyle = BorderStyle.None;
             label3.ForeColor = SystemColors.ControlDarkDark;
+
+        }
+
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Visible = false;
+            MovieSelection mv = new MovieSelection();
+            mv.ShowDialog();
+            this.Visible = true;
 
         }
     }

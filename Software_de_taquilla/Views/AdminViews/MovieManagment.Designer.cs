@@ -129,6 +129,7 @@
             data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             data_grid.Location = new Point(438, 17);
             data_grid.Name = "data_grid";
+            data_grid.RowHeadersVisible = false;
             data_grid.RowHeadersWidth = 51;
             data_grid.RowTemplate.Height = 25;
             data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;

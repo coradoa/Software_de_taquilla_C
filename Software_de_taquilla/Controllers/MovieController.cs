@@ -84,7 +84,7 @@ namespace Software_de_taquilla.Controllers
             view.data_grid.Rows.Clear();
             MovieDao dao = new MovieDao();
             List<Movie> movies = dao.getMovies();
-            view.data_grid.ColumnCount = 7;
+            view.data_grid.ColumnCount = 6;
             view.data_grid.Columns[0].Name = "ID";
             view.data_grid.Columns[1].Name = "Nombre";
             view.data_grid.Columns[2].Name = "Publico";

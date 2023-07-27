@@ -96,6 +96,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "ListingView";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Listing";
             ResumeLayout(false);
             PerformLayout();

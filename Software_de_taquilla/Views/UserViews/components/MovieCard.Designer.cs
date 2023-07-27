@@ -74,6 +74,7 @@
             pictureBox1.Size = new Size(24, 24);
             pictureBox1.TabIndex = 9;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseClick += pictureBox1_MouseClick;
             pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             pictureBox1.MouseLeave += pictureBox1_MouseLeave;
             // 
