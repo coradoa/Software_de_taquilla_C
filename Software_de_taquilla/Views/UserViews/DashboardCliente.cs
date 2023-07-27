@@ -31,5 +31,10 @@ namespace Software_de_taquilla.Views.UserViews
         {
 
         }
+
+        private void btnCobros_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
