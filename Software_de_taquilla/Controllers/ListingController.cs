@@ -12,8 +12,8 @@ namespace Software_de_taquilla.Controllers
 {
     public class ListingController
     {
-        public Listing view;
-        public ListingController(Listing view)
+        public ListingView view;
+        public ListingController(ListingView view)
         {
             this.view = view;
             this.view.Load += new EventHandler(this.buildComponent);

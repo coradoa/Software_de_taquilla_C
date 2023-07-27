@@ -1,6 +1,6 @@
 ﻿namespace Software_de_taquilla.Views.UserViews
 {
-    partial class Listing
+    partial class ListingView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listing));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListingView));
             btnNotificacion = new Button();
-            dtFecha = new DateTimePicker();
             label2 = new Label();
             label1 = new Label();
             flow_container = new FlowLayoutPanel();
+            combo_city = new ComboBox();
             SuspendLayout();
             // 
             // btnNotificacion
@@ -46,13 +46,6 @@
             btnNotificacion.Size = new Size(38, 39);
             btnNotificacion.TabIndex = 25;
             btnNotificacion.UseVisualStyleBackColor = true;
-            // 
-            // dtFecha
-            // 
-            dtFecha.Location = new Point(397, 57);
-            dtFecha.Name = "dtFecha";
-            dtFecha.Size = new Size(200, 23);
-            dtFecha.TabIndex = 24;
             // 
             // label2
             // 
@@ -83,14 +76,22 @@
             flow_container.Size = new Size(743, 299);
             flow_container.TabIndex = 26;
             // 
+            // combo_city
+            // 
+            combo_city.FormattingEnabled = true;
+            combo_city.Location = new Point(497, 50);
+            combo_city.Name = "combo_city";
+            combo_city.Size = new Size(121, 23);
+            combo_city.TabIndex = 27;
+            // 
             // Listing
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(combo_city);
             Controls.Add(flow_container);
             Controls.Add(btnNotificacion);
-            Controls.Add(dtFecha);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Listing";
@@ -101,9 +102,9 @@
 
         #endregion
         private Button btnNotificacion;
-        private DateTimePicker dtFecha;
         private Label label2;
         private Label label1;
         public FlowLayoutPanel flow_container;
+        private ComboBox combo_city;
     }
 }

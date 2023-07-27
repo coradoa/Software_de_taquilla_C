@@ -1,4 +1,4 @@
-using Software_de_taquilla.Views;
+using Software_de_taquilla.Views.AdminViews;
 
 namespace Software_de_taquilla
 {
@@ -8,7 +8,7 @@ namespace Software_de_taquilla
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Login());
+            Application.Run(new DashboardAdmin(1));
         }
     }
 }

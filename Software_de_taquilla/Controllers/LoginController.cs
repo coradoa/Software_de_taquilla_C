@@ -34,7 +34,7 @@ namespace Software_de_taquilla.Controllers
             {
                 this.view.printMessage("¡Bienvenido!");
                 this.view.Visible = false;
-                Listing listing = new Listing();
+                ListingView listing = new ListingView();
                 listing.ShowDialog();
                 this.view.Visible = true;
                 return;

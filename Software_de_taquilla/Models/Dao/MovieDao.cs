@@ -35,11 +35,8 @@ namespace Software_de_taquilla.Models.Dao
 
         public void insertMovie(string name, string image, string duration, int id_listing, int id_room, string p)
         {
-            MessageBox.Show(id_room + "," + id_listing);
             this.connection.Open();
             string sql = "INSERT INTO `pelicula` (`nombre`, `imagen`, `publico`, `duracion`, `id_cartelera`, `id_sala`) VALUES";
-            //string query = "INSERT INTO Pelicula (nombre, imagen, publico, duracion, id_cartelera, id_sala)VALUES";
-            //query += "('" + name + "', '" + image + "' , '" + p + "', '" + duration + "', '" + id_listing + "', '" + id_room + "');";
             sql += "('" + name + "', '" + image + "' ,'" + p + "',  '" + duration + "', '" + id_listing + "', '" + id_room + "');";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
