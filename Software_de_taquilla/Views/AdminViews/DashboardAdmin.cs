@@ -12,9 +12,18 @@ namespace Software_de_taquilla.Views.AdminViews
 {
     public partial class DashboardAdmin : Form
     {
-        public DashboardAdmin()
+        public DashboardAdmin(int rol)
         {
             InitializeComponent();
+            lblPerfil.Text = this.getRole(rol);
+        }
+
+        public string getRole(int r)
+        {
+            if (r == 1) return "Administrador";
+            if (r == 2) return "Empleado";
+            if (r == 3) return "Cliente";
+            return "";
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
