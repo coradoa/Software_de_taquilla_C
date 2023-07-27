@@ -71,6 +71,7 @@
             // 
             // flow_container
             // 
+            flow_container.AutoScroll = true;
             flow_container.Location = new Point(32, 125);
             flow_container.Name = "flow_container";
             flow_container.Size = new Size(743, 299);
