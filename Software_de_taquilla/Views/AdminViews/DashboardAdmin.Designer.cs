@@ -118,6 +118,7 @@
             this.btn_usuarios.Text = "   Usuarios";
             this.btn_usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_usuarios.UseVisualStyleBackColor = true;
+            this.btn_usuarios.Click += new System.EventHandler(this.btn_usuarios_Click_1);
             // 
             // btnMenuAyuda
             // 
@@ -138,6 +139,7 @@
             this.btnMenuAyuda.TabIndex = 5;
             this.btnMenuAyuda.Text = "Menú de ayuda";
             this.btnMenuAyuda.UseVisualStyleBackColor = true;
+            this.btnMenuAyuda.Click += new System.EventHandler(this.btnMenuAyuda_Click);
             // 
             // btn_reportes
             // 
@@ -159,6 +161,7 @@
             this.btn_reportes.Text = "   Reportes";
             this.btn_reportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_reportes.UseVisualStyleBackColor = true;
+            this.btn_reportes.Click += new System.EventHandler(this.btn_reportes_Click);
             // 
             // btn_inicio
             // 

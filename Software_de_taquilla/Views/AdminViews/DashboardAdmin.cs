@@ -67,5 +67,20 @@ namespace Software_de_taquilla.Views.AdminViews
         {
             this.openForm(new MovieManagment());
         }
+
+        private void btn_usuarios_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnMenuAyuda_Click(object sender, EventArgs e)
+        {
+            this.openForm(new UserViews.MenuAyuda());
+        }
+
+        private void btn_reportes_Click(object sender, EventArgs e)
+        {
+            this.openForm(new AdminViews.ReportesMensuales());
+        }
     }
 }

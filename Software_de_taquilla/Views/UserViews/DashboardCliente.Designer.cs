@@ -40,6 +40,7 @@
             this.lblPerfil = new System.Windows.Forms.Label();
             this.PctPerfil = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel_container = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             this.PanelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PctPerfil)).BeginInit();
@@ -58,7 +59,7 @@
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
             this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(259, 548);
+            this.PanelMenu.Size = new System.Drawing.Size(259, 646);
             this.PanelMenu.TabIndex = 0;
             // 
             // btnSalir
@@ -209,11 +210,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "MACRO CINEMA";
             // 
+            // panel_container
+            // 
+            this.panel_container.BackColor = System.Drawing.Color.White;
+            this.panel_container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel_container.Location = new System.Drawing.Point(259, 0);
+            this.panel_container.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel_container.Name = "panel_container";
+            this.panel_container.Size = new System.Drawing.Size(903, 646);
+            this.panel_container.TabIndex = 3;
+            // 
             // DashboardCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(896, 548);
+            this.ClientSize = new System.Drawing.Size(1162, 646);
+            this.Controls.Add(this.panel_container);
             this.Controls.Add(this.PanelMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DashboardCliente";
@@ -239,5 +251,6 @@
         private Button btnMenuAyuda;
         private Button btnCobros;
         private Button btnCartelera;
+        private Panel panel_container;
     }
 }
