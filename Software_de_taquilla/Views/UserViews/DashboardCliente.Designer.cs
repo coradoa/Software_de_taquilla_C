@@ -96,6 +96,7 @@
             this.btnMenuAyuda.TabIndex = 5;
             this.btnMenuAyuda.Text = "Menú de ayuda";
             this.btnMenuAyuda.UseVisualStyleBackColor = true;
+            this.btnMenuAyuda.Click += new System.EventHandler(this.btnMenuAyuda_Click);
             // 
             // btnCobros
             // 
@@ -135,6 +136,7 @@
             this.btnCartelera.TabIndex = 3;
             this.btnCartelera.Text = "Cartelera";
             this.btnCartelera.UseVisualStyleBackColor = true;
+            this.btnCartelera.Click += new System.EventHandler(this.btnCartelera_Click);
             // 
             // btnInicio
             // 
