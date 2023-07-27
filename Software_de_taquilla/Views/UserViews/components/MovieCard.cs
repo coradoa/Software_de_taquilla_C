@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Software_de_taquilla.Models.Dto;
 using System.Windows.Forms;
+using Google.Protobuf.WellKnownTypes;
 
 namespace Software_de_taquilla.Views.UserViews.components
 {
@@ -20,9 +21,34 @@ namespace Software_de_taquilla.Views.UserViews.components
             this.m = m;
             InitializeComponent();
             label1.Text = movie.name;
-            //string imagePath = @"C:\Users\d_car\OneDrive\Escritorio\UMG\4toaño\2do semestre\analisis de sistemas 2\Proyecto1\PROYECTO1\Software_de_taquilla_C\Software_de_taquilla\images\" + movie.image;
-            //picture.Image = Image.FromFile(imagePath);
             picture.Image = Image.FromFile("./../../../images/" + movie.image);
+            int duracion = Convert.ToInt32(movie.duration);
+            time_line.Value = duracion;
+            label2.Text = duracion.ToString() + "min";
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            MovieSelection mv = new MovieSelection();
+            mv.ShowDialog();
+            this.Visible = true;
+        }
+
+
+        private void pictureBox1_MouseEnter(object sender, EventArgs e)
+        {
+            label3.ForeColor = Color.SeaGreen;
+            this.panel_card.BorderStyle = BorderStyle.FixedSingle;
+
+        }
+
+        private void pictureBox1_MouseLeave(object sender, EventArgs e)
+        {
+            this.panel_card.BorderStyle = BorderStyle.None;
+            label3.ForeColor = SystemColors.ControlDarkDark;
+
         }
     }
 }
