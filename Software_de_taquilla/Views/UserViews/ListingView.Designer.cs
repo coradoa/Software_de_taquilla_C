@@ -78,13 +78,14 @@
             // 
             // combo_city
             // 
+            combo_city.DropDownStyle = ComboBoxStyle.DropDownList;
             combo_city.FormattingEnabled = true;
             combo_city.Location = new Point(497, 50);
             combo_city.Name = "combo_city";
             combo_city.Size = new Size(121, 23);
             combo_city.TabIndex = 27;
             // 
-            // Listing
+            // ListingView
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -94,7 +95,7 @@
             Controls.Add(btnNotificacion);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Listing";
+            Name = "ListingView";
             Text = "Listing";
             ResumeLayout(false);
             PerformLayout();
@@ -105,6 +106,6 @@
         private Label label2;
         private Label label1;
         public FlowLayoutPanel flow_container;
-        private ComboBox combo_city;
+        public ComboBox combo_city;
     }
 }

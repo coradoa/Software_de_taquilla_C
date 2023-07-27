@@ -17,18 +17,45 @@ namespace Software_de_taquilla.Controllers
         {
             this.view = view;
             this.view.Load += new EventHandler(this.buildComponent);
+            this.view.combo_city.SelectedIndexChanged += new EventHandler(this.filtrar);
         }
 
-        public void buildComponent(object sender, EventArgs e)
+        public void filtrar(object sender, EventArgs e)
         {
+            this.view.flow_container.Controls.Clear();
+            this.fillMovies(this.view.combo_city.SelectedIndex + 1);
+        }
+
+        public void fillMovies(int n)
+        {
+
             MovieDao mydao = new MovieDao();
-            List<Movie> movies = mydao.getMovies();
+            List<Movie> movies = new List<Movie>();
+            if (n == -1) movies = mydao.getMovies();
+            else movies = mydao.getMovies(n);
             var date = DateTime.Now;
             int h = date.Hour;
             int m = date.Minute;
             foreach (Movie movie in movies)
             {
                 this.view.flow_container.Controls.Add(new MovieCard(movie, h, m));
+            }
+        }
+
+
+        public void buildComponent(object sender, EventArgs e)
+        {
+            this.fillCity();
+            this.fillMovies(-1);
+        }
+
+        public void fillCity()
+        {
+            CityDao mydao = new CityDao();
+            List<City> cts = mydao.getCitys();
+            foreach (City c in cts)
+            {
+                this.view.combo_city.Items.Add(c.name);
             }
         }
     }
