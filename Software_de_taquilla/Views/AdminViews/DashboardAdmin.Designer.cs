@@ -86,6 +86,7 @@
             this.btn_peliculas.Text = "    Peliculas";
             this.btn_peliculas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_peliculas.UseVisualStyleBackColor = true;
+            this.btn_peliculas.Click += new System.EventHandler(this.btn_peliculas_Click);
             // 
             // pic_exit
             // 
@@ -118,7 +119,7 @@
             this.btn_usuarios.Text = "   Usuarios";
             this.btn_usuarios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_usuarios.UseVisualStyleBackColor = true;
-            this.btn_usuarios.Click += new System.EventHandler(this.btn_usuarios_Click_1);
+            this.btn_usuarios.Click += new System.EventHandler(this.btn_usuarios_Click);
             // 
             // btnMenuAyuda
             // 
