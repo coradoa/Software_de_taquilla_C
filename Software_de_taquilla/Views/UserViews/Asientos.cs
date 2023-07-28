@@ -7,13 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Models.Dao;
+using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Views.UserViews
 {
     public partial class Asientos : Form
     {
-        public Asientos()
+        public Movie movie;
+        public Asientos(Movie mv)
         {
+            this.movie = mv;
             InitializeComponent();
             this.createEffects();
         }
@@ -41,6 +45,12 @@ namespace Software_de_taquilla.Views.UserViews
                     button.Click += new EventHandler(this.clickEvent);
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AsientoDao asi = new AsientoDao();
+            asi.updateAsiento(this.movie.id_room, 1);
         }
     }
 }

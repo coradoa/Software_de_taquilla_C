@@ -36,7 +36,7 @@ namespace Software_de_taquilla.Views.UserViews
         {
             Button btn = (Button)sender;
             string id = btn.Name.Replace("btN_", "");
-            SeleccionBoletos sb = new SeleccionBoletos();
+            SeleccionBoletos sb = new SeleccionBoletos(movie);
             this.Visible = false;
             sb.ShowDialog();
             this.Visible = true;
