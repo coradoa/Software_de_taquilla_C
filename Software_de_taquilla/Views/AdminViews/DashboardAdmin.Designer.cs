@@ -39,13 +39,13 @@
             this.PanelDatos = new System.Windows.Forms.Panel();
             this.lblEstado = new System.Windows.Forms.Label();
             this.lblPerfil = new System.Windows.Forms.Label();
-            this.PctPerfil = new System.Windows.Forms.PictureBox();
+            this.Pic_Perfil = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel_container = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).BeginInit();
             this.PanelDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Perfil)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
@@ -190,7 +190,7 @@
             this.PanelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
             this.PanelDatos.Controls.Add(this.lblEstado);
             this.PanelDatos.Controls.Add(this.lblPerfil);
-            this.PanelDatos.Controls.Add(this.PctPerfil);
+            this.PanelDatos.Controls.Add(this.Pic_Perfil);
             this.PanelDatos.Controls.Add(this.label1);
             this.PanelDatos.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelDatos.Location = new System.Drawing.Point(0, 0);
@@ -221,14 +221,14 @@
             this.lblPerfil.TabIndex = 2;
             this.lblPerfil.Text = "Administrador";
             // 
-            // PctPerfil
+            // Pic_Perfil
             // 
-            this.PctPerfil.Location = new System.Drawing.Point(56, 87);
-            this.PctPerfil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PctPerfil.Name = "PctPerfil";
-            this.PctPerfil.Size = new System.Drawing.Size(75, 76);
-            this.PctPerfil.TabIndex = 1;
-            this.PctPerfil.TabStop = false;
+            this.Pic_Perfil.Location = new System.Drawing.Point(56, 87);
+            this.Pic_Perfil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Pic_Perfil.Name = "Pic_Perfil";
+            this.Pic_Perfil.Size = new System.Drawing.Size(75, 76);
+            this.Pic_Perfil.TabIndex = 1;
+            this.Pic_Perfil.TabStop = false;
             // 
             // label1
             // 
@@ -265,7 +265,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pic_exit)).EndInit();
             this.PanelDatos.ResumeLayout(false);
             this.PanelDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PctPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Perfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -277,7 +277,7 @@
         private Panel PanelDatos;
         private Label lblEstado;
         private Label lblPerfil;
-        private PictureBox PctPerfil;
+        private PictureBox Pic_Perfil;
         private Label label1;
         private Button btn_usuarios;
         private Button btnMenuAyuda;
