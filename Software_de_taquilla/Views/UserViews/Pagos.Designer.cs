@@ -38,20 +38,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_fechav = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.rb_pago = new System.Windows.Forms.RadioButton();
+            this.pic1 = new System.Windows.Forms.PictureBox();
+            this.pic2 = new System.Windows.Forms.PictureBox();
+            this.pic3 = new System.Windows.Forms.PictureBox();
+            this.pic6 = new System.Windows.Forms.PictureBox();
+            this.pic5 = new System.Windows.Forms.PictureBox();
+            this.pic4 = new System.Windows.Forms.PictureBox();
             this.btn_cobro = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -172,78 +172,78 @@
             this.txt_fechav.TabIndex = 9;
             this.txt_fechav.Text = "dd/mm/yyyy";
             // 
-            // radioButton1
+            // rb_pago
             // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(427, 204);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(278, 25);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Pago con tarjeta de credito";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_pago.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.rb_pago.AutoSize = true;
+            this.rb_pago.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rb_pago.Location = new System.Drawing.Point(427, 204);
+            this.rb_pago.Name = "rb_pago";
+            this.rb_pago.Size = new System.Drawing.Size(278, 25);
+            this.rb_pago.TabIndex = 10;
+            this.rb_pago.TabStop = true;
+            this.rb_pago.Text = "Pago con tarjeta de credito";
+            this.rb_pago.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
+            // pic1
             // 
-            this.pictureBox1.Image = global::Software_de_taquilla.Properties.Resources.visa;
-            this.pictureBox1.Location = new System.Drawing.Point(437, 238);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 35);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.pic1.Image = global::Software_de_taquilla.Properties.Resources.visa;
+            this.pic1.Location = new System.Drawing.Point(437, 238);
+            this.pic1.Name = "pic1";
+            this.pic1.Size = new System.Drawing.Size(50, 35);
+            this.pic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic1.TabIndex = 17;
+            this.pic1.TabStop = false;
             // 
-            // pictureBox2
+            // pic2
             // 
-            this.pictureBox2.Image = global::Software_de_taquilla.Properties.Resources.card;
-            this.pictureBox2.Location = new System.Drawing.Point(529, 238);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(62, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
+            this.pic2.Image = global::Software_de_taquilla.Properties.Resources.card;
+            this.pic2.Location = new System.Drawing.Point(529, 238);
+            this.pic2.Name = "pic2";
+            this.pic2.Size = new System.Drawing.Size(62, 35);
+            this.pic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic2.TabIndex = 18;
+            this.pic2.TabStop = false;
             // 
-            // pictureBox3
+            // pic3
             // 
-            this.pictureBox3.Image = global::Software_de_taquilla.Properties.Resources.american_express;
-            this.pictureBox3.Location = new System.Drawing.Point(630, 238);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(58, 35);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
+            this.pic3.Image = global::Software_de_taquilla.Properties.Resources.american_express;
+            this.pic3.Location = new System.Drawing.Point(630, 238);
+            this.pic3.Name = "pic3";
+            this.pic3.Size = new System.Drawing.Size(58, 35);
+            this.pic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic3.TabIndex = 19;
+            this.pic3.TabStop = false;
             // 
-            // pictureBox4
+            // pic6
             // 
-            this.pictureBox4.Image = global::Software_de_taquilla.Properties.Resources.american_express;
-            this.pictureBox4.Location = new System.Drawing.Point(255, 407);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(58, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 25;
-            this.pictureBox4.TabStop = false;
+            this.pic6.Image = global::Software_de_taquilla.Properties.Resources.american_express;
+            this.pic6.Location = new System.Drawing.Point(255, 407);
+            this.pic6.Name = "pic6";
+            this.pic6.Size = new System.Drawing.Size(58, 36);
+            this.pic6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic6.TabIndex = 25;
+            this.pic6.TabStop = false;
             // 
-            // pictureBox5
+            // pic5
             // 
-            this.pictureBox5.Image = global::Software_de_taquilla.Properties.Resources.card;
-            this.pictureBox5.Location = new System.Drawing.Point(143, 407);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(62, 36);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 24;
-            this.pictureBox5.TabStop = false;
+            this.pic5.Image = global::Software_de_taquilla.Properties.Resources.card;
+            this.pic5.Location = new System.Drawing.Point(143, 407);
+            this.pic5.Name = "pic5";
+            this.pic5.Size = new System.Drawing.Size(62, 36);
+            this.pic5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic5.TabIndex = 24;
+            this.pic5.TabStop = false;
             // 
-            // pictureBox6
+            // pic4
             // 
-            this.pictureBox6.Image = global::Software_de_taquilla.Properties.Resources.visa;
-            this.pictureBox6.Location = new System.Drawing.Point(53, 407);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 36);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
+            this.pic4.Image = global::Software_de_taquilla.Properties.Resources.visa;
+            this.pic4.Location = new System.Drawing.Point(53, 407);
+            this.pic4.Name = "pic4";
+            this.pic4.Size = new System.Drawing.Size(50, 36);
+            this.pic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pic4.TabIndex = 23;
+            this.pic4.TabStop = false;
             // 
             // btn_cobro
             // 
@@ -267,13 +267,13 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(726, 505);
             this.Controls.Add(this.btn_cobro);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.pic6);
+            this.Controls.Add(this.pic5);
+            this.Controls.Add(this.pic4);
+            this.Controls.Add(this.pic3);
+            this.Controls.Add(this.pic2);
+            this.Controls.Add(this.pic1);
+            this.Controls.Add(this.rb_pago);
             this.Controls.Add(this.txt_fechav);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -287,12 +287,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pagos";
             this.Text = "Pagos";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,13 +310,13 @@
         private Label label2;
         private Label label3;
         private TextBox txt_fechav;
-        private RadioButton radioButton1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private RadioButton rb_pago;
+        private PictureBox pic1;
+        private PictureBox pic2;
+        private PictureBox pic3;
+        private PictureBox pic6;
+        private PictureBox pic5;
+        private PictureBox pic4;
         public Button btn_cobro;
     }
 }
