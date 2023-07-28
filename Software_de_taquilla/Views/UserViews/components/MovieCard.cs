@@ -15,8 +15,10 @@ namespace Software_de_taquilla.Views.UserViews.components
     public partial class MovieCard : UserControl
     {
         public int h, m;
+        public Movie mov;
         public MovieCard(Movie movie, int h, int m)
         {
+            this.mov = movie;
             this.h = h;
             this.m = m;
             InitializeComponent();
@@ -48,7 +50,7 @@ namespace Software_de_taquilla.Views.UserViews.components
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = false;
-            MovieSelection mv = new MovieSelection();
+            MovieSelection mv = new MovieSelection(mov);
             mv.ShowDialog();
             this.Visible = true;
 
