@@ -7,13 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Views.UserViews
 {
     public partial class SeleccionBoletos : Form
     {
-        public SeleccionBoletos()
+        public Movie movie;
+        public SeleccionBoletos(Movie mov)
         {
+            this.movie = mov;
             InitializeComponent();
         }
 
@@ -57,7 +60,7 @@ namespace Software_de_taquilla.Views.UserViews
         private void btn_continuar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            Asientos asi = new Asientos();
+            Asientos asi = new Asientos(movie);
             asi.ShowDialog();
             this.Visible = true;
         }
