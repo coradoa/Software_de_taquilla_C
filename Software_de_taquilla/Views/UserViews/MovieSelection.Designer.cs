@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picture = new System.Windows.Forms.PictureBox();
+            this.pic_imag = new System.Windows.Forms.PictureBox();
             this.lbl_1 = new System.Windows.Forms.Label();
             this.lbl_2 = new System.Windows.Forms.Label();
             this.lbl_3 = new System.Windows.Forms.Label();
             this.lbl_4 = new System.Windows.Forms.Label();
             this.panel_horarios = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_imag)).BeginInit();
             this.SuspendLayout();
             // 
-            // picture
+            // pic_imag
             // 
-            this.picture.Location = new System.Drawing.Point(14, 64);
-            this.picture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(359, 257);
-            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture.TabIndex = 0;
-            this.picture.TabStop = false;
+            this.pic_imag.Location = new System.Drawing.Point(14, 64);
+            this.pic_imag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pic_imag.Name = "pic_imag";
+            this.pic_imag.Size = new System.Drawing.Size(359, 257);
+            this.pic_imag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_imag.TabIndex = 0;
+            this.pic_imag.TabStop = false;
             // 
             // lbl_1
             // 
@@ -111,6 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(633, 392);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel_horarios);
@@ -118,12 +119,12 @@
             this.Controls.Add(this.lbl_3);
             this.Controls.Add(this.lbl_2);
             this.Controls.Add(this.lbl_1);
-            this.Controls.Add(this.picture);
+            this.Controls.Add(this.pic_imag);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MovieSelection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieSelection";
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_imag)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,7 +135,7 @@
         private Label lbl_2;
         private Label lbl_3;
         private Label lbl_4;
-        public PictureBox picture;
+        public PictureBox pic_imag;
         private FlowLayoutPanel panel_horarios;
         private Label label5;
     }

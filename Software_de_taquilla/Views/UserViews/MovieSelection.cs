@@ -28,7 +28,7 @@ namespace Software_de_taquilla.Views.UserViews
             lbl_2.Text = this.movie.public_;
             lbl_3.Text = this.movie.duration;
             lbl_4.Text = this.movie.id_room.ToString();
-            picture.Image = Image.FromFile("./../../../images/" + movie.image);
+            pic_imag.Image = Image.FromFile("./../../../images/" + movie.image);
             this.fillSchedules();
         }
 
