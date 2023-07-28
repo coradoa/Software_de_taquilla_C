@@ -10,7 +10,7 @@ namespace Software_de_taquilla.Models.Dao
 {
     public class ScheduleDao : DBContext
     {
-        public List<Schedule> getRoles()
+        public List<Schedule> getSchedules()
         {
             this.connection.Open();
             List<Schedule> schedules = new List<Schedule>();

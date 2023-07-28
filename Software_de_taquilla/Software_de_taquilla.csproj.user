@@ -59,5 +59,8 @@
     <Compile Update="Views\UserViews\SedesHorariosXela.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\UserViews\SeleccionBoletos.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
