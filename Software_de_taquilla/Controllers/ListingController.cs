@@ -17,22 +17,22 @@ namespace Software_de_taquilla.Controllers
         {
             this.view = view;
             this.view.Load += new EventHandler(this.buildComponent);
-            this.view.combo_city.SelectedIndexChanged += new EventHandler(this.filtrar);
+            this.view.combo_cine.SelectedIndexChanged += new EventHandler(this.filtrar);
         }
 
         public void filtrar(object sender, EventArgs e)
         {
             this.view.flow_container.Controls.Clear();
-            this.fillMovies(this.view.combo_city.SelectedIndex + 1);
+            this.fillMovies(this.view.combo_city.SelectedIndex + 1, this.view.combo_cine.SelectedIndex + 1);
         }
 
-        public void fillMovies(int n)
+        public void fillMovies(int n, int j)
         {
 
             MovieDao mydao = new MovieDao();
             List<Movie> movies = new List<Movie>();
             if (n == -1) movies = mydao.getMovies();
-            else movies = mydao.getMovies(n);
+            else movies = mydao.getMovies(n, j);
             var date = DateTime.Now;
             int h = date.Hour;
             int m = date.Minute;
@@ -46,7 +46,8 @@ namespace Software_de_taquilla.Controllers
         public void buildComponent(object sender, EventArgs e)
         {
             this.fillCity();
-            this.fillMovies(-1);
+            this.fillCine();
+            this.fillMovies(-1, -1);
         }
 
         public void fillCity()
@@ -56,6 +57,16 @@ namespace Software_de_taquilla.Controllers
             foreach (City c in cts)
             {
                 this.view.combo_city.Items.Add(c.name);
+            }
+        }
+
+        public void fillCine()
+        {
+            CityDao mydao = new CityDao();
+            List<Cine> cts = mydao.getCine();
+            foreach (Cine c in cts)
+            {
+                this.view.combo_cine.Items.Add(c.lugar);
             }
         }
     }
