@@ -102,6 +102,7 @@
             button15 = new Button();
             button16 = new Button();
             button17 = new Button();
+            button18 = new Button();
             button19 = new Button();
             button20 = new Button();
             btn_a10 = new Button();
@@ -117,7 +118,6 @@
             textBox5 = new TextBox();
             label6 = new Label();
             button1 = new Button();
-            button18 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
@@ -962,6 +962,16 @@
             button17.TabIndex = 21;
             button17.UseVisualStyleBackColor = true;
             // 
+            // button18
+            // 
+            button18.FlatAppearance.BorderSize = 0;
+            button18.FlatStyle = FlatStyle.System;
+            button18.Location = new Point(173, 99);
+            button18.Margin = new Padding(3, 2, 3, 2);
+            button18.Name = "button18";
+            button18.Size = new Size(32, 22);
+            button18.TabIndex = 78;
+            // 
             // button19
             // 
             button19.Location = new Point(129, 99);
@@ -1094,23 +1104,14 @@
             // button1
             // 
             button1.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(334, 389);
+            button1.Location = new Point(350, 400);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(105, 26);
             button1.TabIndex = 3;
             button1.Text = "Confirmar";
             button1.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            button18.FlatAppearance.BorderSize = 0;
-            button18.FlatStyle = FlatStyle.System;
-            button18.Location = new Point(173, 99);
-            button18.Margin = new Padding(3, 2, 3, 2);
-            button18.Name = "button18";
-            button18.Size = new Size(32, 22);
-            button18.TabIndex = 78;
+            button1.Click += button1_Click;
             // 
             // Asientos
             // 

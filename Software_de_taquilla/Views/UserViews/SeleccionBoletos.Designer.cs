@@ -131,6 +131,7 @@
             // txt_n1
             // 
             txt_n1.BorderStyle = BorderStyle.FixedSingle;
+            txt_n1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_n1.Location = new Point(457, 184);
             txt_n1.Multiline = true;
             txt_n1.Name = "txt_n1";
@@ -142,6 +143,7 @@
             // txt_n2
             // 
             txt_n2.BorderStyle = BorderStyle.FixedSingle;
+            txt_n2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_n2.Location = new Point(457, 245);
             txt_n2.Multiline = true;
             txt_n2.Name = "txt_n2";
@@ -153,6 +155,7 @@
             // txt_n3
             // 
             txt_n3.BorderStyle = BorderStyle.FixedSingle;
+            txt_n3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
             txt_n3.Location = new Point(457, 306);
             txt_n3.Multiline = true;
             txt_n3.Name = "txt_n3";
