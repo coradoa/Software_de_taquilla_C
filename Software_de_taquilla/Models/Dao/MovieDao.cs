@@ -43,14 +43,14 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
         }
 
-        public List<Movie> getMovies(int id_c)
+        public List<Movie> getMovies(int id_c, int id_l)
         {
 
             this.connection.Open();
             List<Movie> movies = new List<Movie>();
-            string sql = "SELECT pelicula.id, pelicula.nombre, pelicula.imagen, pelicula.publico, pelicula.duracion, pelicula.id_sala FROM pelicula";
-            sql += " INNER JOIN cartelera ON pelicula.id_cartelera = cartelera.id";
-            sql += " INNER JOIN ciudad on cartelera.id_ciudad = ciudad.id where ciudad.id = '" + id_c + "';";
+
+            string sql = "SELECT pelicula.id, pelicula.nombre,pelicula.imagen,pelicula.publico, pelicula.duracion, pelicula.id_sala, Cine.lugar FROM pelicula INNER JOIN Cartelera ON pelicula.id_cartelera = cartelera.id INNER JOIN Cine ON test.cartelera.id_cine = Cine.id ";
+            sql += " where Cine.id_ciudad = '" + id_c + "' and Cine.id = '" + id_l + "';";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             MySqlDataReader reader = cursor.ExecuteReader();
             while (reader.Read())

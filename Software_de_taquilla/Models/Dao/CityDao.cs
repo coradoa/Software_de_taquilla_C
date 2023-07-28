@@ -30,5 +30,27 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
             return citys;
         }
+
+        public List<Cine> getCine()
+        {
+
+            this.connection.Open();
+            List<Cine> citys = new List<Cine>();
+            string sql = "select * from cine";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            MySqlDataReader reader = cursor.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                string n = reader.GetString(1);
+                int d = reader.GetInt32(2);
+                Cine city = new Cine(id, n, d);
+                citys.Add(city);
+            }
+            this.connection.Close();
+            return citys;
+        }
+
+
     }
 }
