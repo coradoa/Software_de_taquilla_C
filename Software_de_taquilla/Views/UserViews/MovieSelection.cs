@@ -24,10 +24,10 @@ namespace Software_de_taquilla.Views.UserViews
 
         public void buildComponent()
         {
-            label1.Text = this.movie.name;
-            label2.Text = this.movie.public_;
-            label3.Text = this.movie.duration;
-            label4.Text = this.movie.id_room.ToString();
+            lbl_1.Text = this.movie.name;
+            lbl_2.Text = this.movie.public_;
+            lbl_3.Text = this.movie.duration;
+            lbl_4.Text = this.movie.id_room.ToString();
             picture.Image = Image.FromFile("./../../../images/" + movie.image);
             this.fillSchedules();
         }
