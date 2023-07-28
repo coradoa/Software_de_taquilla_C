@@ -51,7 +51,7 @@
             // PanelMenu
             // 
             this.PanelMenu.AutoScroll = true;
-            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(158)))), ((int)(((byte)(160)))));
+            this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
             this.PanelMenu.Controls.Add(this.btn_peliculas);
             this.PanelMenu.Controls.Add(this.pic_exit);
             this.PanelMenu.Controls.Add(this.btn_usuarios);
@@ -186,7 +186,7 @@
             // 
             // PanelDatos
             // 
-            this.PanelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(158)))), ((int)(((byte)(160)))));
+            this.PanelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
             this.PanelDatos.Controls.Add(this.lblEstado);
             this.PanelDatos.Controls.Add(this.lblPerfil);
             this.PanelDatos.Controls.Add(this.PctPerfil);
@@ -202,7 +202,7 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(62)))), ((int)(((byte)(85)))));
+            this.lblEstado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(105)))), ((int)(((byte)(130)))));
             this.lblEstado.Location = new System.Drawing.Point(142, 132);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(55, 19);
