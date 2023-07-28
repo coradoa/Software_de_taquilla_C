@@ -15,62 +15,32 @@ namespace Software_de_taquilla.Views.UserViews
         public Asientos()
         {
             InitializeComponent();
+            this.createEffects();
         }
 
-        private void btn_s1_Click(object sender, EventArgs e)
-        {
-            btn_a1.BackColor = System.Drawing.Color.Green;
 
+        public void clickEvent(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.BackColor == System.Drawing.Color.WhiteSmoke)
+            {
+                btn.BackColor = System.Drawing.Color.Green;
+            }
+            else
+            {
+                btn.BackColor = System.Drawing.Color.WhiteSmoke;
+            }
         }
 
-        private void button20_Click(object sender, EventArgs e)
+        public void createEffects()
         {
-
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
+            foreach (Control button in panel2.Controls)
+            {
+                if (button is Button)
+                {
+                    button.Click += new EventHandler(this.clickEvent);
+                }
+            }
         }
     }
 }

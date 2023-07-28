@@ -53,5 +53,13 @@ namespace Software_de_taquilla.Views.UserViews
             int n = Convert.ToInt32(txt_n3.Text) - 1;
             if (n > 0) txt_n3.Text = n.ToString();
         }
+
+        private void btn_continuar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Asientos asi = new Asientos();
+            asi.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
