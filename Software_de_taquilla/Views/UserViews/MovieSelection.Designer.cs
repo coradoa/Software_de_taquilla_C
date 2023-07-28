@@ -28,65 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.picture = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.pic_imag = new System.Windows.Forms.PictureBox();
+            this.lbl_1 = new System.Windows.Forms.Label();
+            this.lbl_2 = new System.Windows.Forms.Label();
+            this.lbl_3 = new System.Windows.Forms.Label();
+            this.lbl_4 = new System.Windows.Forms.Label();
             this.panel_horarios = new System.Windows.Forms.FlowLayoutPanel();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_imag)).BeginInit();
             this.SuspendLayout();
             // 
-            // picture
+            // pic_imag
             // 
-            this.picture.Location = new System.Drawing.Point(14, 64);
-            this.picture.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(359, 257);
-            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture.TabIndex = 0;
-            this.picture.TabStop = false;
+            this.pic_imag.Location = new System.Drawing.Point(14, 64);
+            this.pic_imag.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pic_imag.Name = "pic_imag";
+            this.pic_imag.Size = new System.Drawing.Size(359, 257);
+            this.pic_imag.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pic_imag.TabIndex = 0;
+            this.pic_imag.TabStop = false;
             // 
-            // label1
+            // lbl_1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.lbl_1.AutoSize = true;
+            this.lbl_1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_1.Location = new System.Drawing.Point(15, 25);
+            this.lbl_1.Name = "lbl_1";
+            this.lbl_1.Size = new System.Drawing.Size(60, 19);
+            this.lbl_1.TabIndex = 1;
+            this.lbl_1.Text = "label1";
             // 
-            // label2
+            // lbl_2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(89, 337);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 19);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lbl_2.AutoSize = true;
+            this.lbl_2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_2.Location = new System.Drawing.Point(89, 337);
+            this.lbl_2.Name = "lbl_2";
+            this.lbl_2.Size = new System.Drawing.Size(60, 19);
+            this.lbl_2.TabIndex = 2;
+            this.lbl_2.Text = "label2";
             // 
-            // label3
+            // lbl_3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(160, 337);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 19);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.lbl_3.AutoSize = true;
+            this.lbl_3.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_3.Location = new System.Drawing.Point(160, 337);
+            this.lbl_3.Name = "lbl_3";
+            this.lbl_3.Size = new System.Drawing.Size(60, 19);
+            this.lbl_3.TabIndex = 3;
+            this.lbl_3.Text = "label3";
             // 
-            // label4
+            // lbl_4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(242, 337);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 19);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.lbl_4.AutoSize = true;
+            this.lbl_4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_4.Location = new System.Drawing.Point(242, 337);
+            this.lbl_4.Name = "lbl_4";
+            this.lbl_4.Size = new System.Drawing.Size(60, 19);
+            this.lbl_4.TabIndex = 4;
+            this.lbl_4.Text = "label4";
             // 
             // panel_horarios
             // 
@@ -111,30 +111,31 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(633, 392);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panel_horarios);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.picture);
+            this.Controls.Add(this.lbl_4);
+            this.Controls.Add(this.lbl_3);
+            this.Controls.Add(this.lbl_2);
+            this.Controls.Add(this.lbl_1);
+            this.Controls.Add(this.pic_imag);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MovieSelection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MovieSelection";
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_imag)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        public PictureBox picture;
+        private Label lbl_1;
+        private Label lbl_2;
+        private Label lbl_3;
+        private Label lbl_4;
+        public PictureBox pic_imag;
         private FlowLayoutPanel panel_horarios;
         private Label label5;
     }
