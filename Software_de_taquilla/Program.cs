@@ -9,7 +9,7 @@ namespace Software_de_taquilla
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new Asientos());
+            Application.Run(new Login());
         }
     }
 }

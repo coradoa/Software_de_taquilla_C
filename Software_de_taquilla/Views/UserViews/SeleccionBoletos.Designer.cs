@@ -243,6 +243,7 @@
             btn_continuar.TabIndex = 17;
             btn_continuar.Text = "CONTINUAR";
             btn_continuar.UseVisualStyleBackColor = false;
+            btn_continuar.Click += btn_continuar_Click;
             // 
             // SeleccionBoletos
             // 
