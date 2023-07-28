@@ -33,21 +33,23 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
+            panel_horarios = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)picture).BeginInit();
             SuspendLayout();
             // 
             // picture
             // 
-            picture.Location = new Point(12, 12);
+            picture.Location = new Point(12, 22);
             picture.Name = "picture";
             picture.Size = new Size(279, 219);
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
             picture.TabIndex = 0;
             picture.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(316, 12);
+            label1.Location = new Point(330, 22);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 1;
@@ -56,7 +58,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(316, 59);
+            label2.Location = new Point(73, 285);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 2;
@@ -65,7 +67,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(378, 59);
+            label3.Location = new Point(135, 285);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 3;
@@ -74,17 +76,25 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(450, 59);
+            label4.Location = new Point(207, 285);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 4;
             label4.Text = "label4";
             // 
+            // panel_horarios
+            // 
+            panel_horarios.Location = new Point(330, 48);
+            panel_horarios.Name = "panel_horarios";
+            panel_horarios.Size = new Size(437, 193);
+            panel_horarios.TabIndex = 5;
+            // 
             // MovieSelection
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(779, 441);
+            ClientSize = new Size(779, 328);
+            Controls.Add(panel_horarios);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -98,11 +108,11 @@
         }
 
         #endregion
-
-        private PictureBox picture;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
+        public PictureBox picture;
+        private FlowLayoutPanel panel_horarios;
     }
 }
