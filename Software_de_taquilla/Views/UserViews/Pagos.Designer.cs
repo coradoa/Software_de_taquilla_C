@@ -74,9 +74,9 @@
             txt_correo.Location = new Point(33, 103);
             txt_correo.Margin = new Padding(3, 2, 3, 2);
             txt_correo.Name = "txt_correo";
+            txt_correo.PlaceholderText = "ejemplo@gmail.com";
             txt_correo.Size = new Size(290, 25);
             txt_correo.TabIndex = 1;
-            txt_correo.Text = "ejemplo@gmail.com";
             txt_correo.Click += txt_correo_Click;
             txt_correo.Leave += txt_correo_Leave;
             // 
@@ -88,9 +88,9 @@
             txt_telefono.Location = new Point(374, 106);
             txt_telefono.Margin = new Padding(3, 2, 3, 2);
             txt_telefono.Name = "txt_telefono";
+            txt_telefono.PlaceholderText = "Telefono";
             txt_telefono.Size = new Size(242, 25);
             txt_telefono.TabIndex = 2;
-            txt_telefono.Text = "Teléfono";
             txt_telefono.Click += txt_telefono_Click;
             txt_telefono.TextChanged += textBox2_TextChanged;
             txt_telefono.Leave += txt_telefono_Leave;
@@ -103,9 +103,10 @@
             txt_monto.Location = new Point(33, 152);
             txt_monto.Margin = new Padding(3, 2, 3, 2);
             txt_monto.Name = "txt_monto";
+            txt_monto.PlaceholderText = "Q.";
+            txt_monto.ReadOnly = true;
             txt_monto.Size = new Size(290, 25);
             txt_monto.TabIndex = 3;
-            txt_monto.Text = "Q.245.00 ";
             txt_monto.Click += txt_monto_Click;
             txt_monto.Leave += txt_monto_Leave;
             // 
@@ -117,9 +118,9 @@
             txt_notarjeta.Location = new Point(33, 197);
             txt_notarjeta.Margin = new Padding(3, 2, 3, 2);
             txt_notarjeta.Name = "txt_notarjeta";
+            txt_notarjeta.PlaceholderText = "Número de Tarjeta";
             txt_notarjeta.Size = new Size(290, 25);
             txt_notarjeta.TabIndex = 4;
-            txt_notarjeta.Text = "Número de Tarjeta";
             // 
             // dateTimePicker1
             // 
@@ -175,9 +176,9 @@
             txt_fechav.Location = new Point(374, 253);
             txt_fechav.Margin = new Padding(3, 2, 3, 2);
             txt_fechav.Name = "txt_fechav";
+            txt_fechav.PlaceholderText = "dd/mm/yyyy";
             txt_fechav.Size = new Size(242, 25);
             txt_fechav.TabIndex = 9;
-            txt_fechav.Text = "dd/mm/yyyy";
             // 
             // rb_pago
             // 
@@ -272,6 +273,7 @@
             btn_cobro.TabIndex = 26;
             btn_cobro.Text = "Realizar Cobro";
             btn_cobro.UseVisualStyleBackColor = false;
+            btn_cobro.Click += btn_cobro_Click;
             // 
             // Pagos
             // 

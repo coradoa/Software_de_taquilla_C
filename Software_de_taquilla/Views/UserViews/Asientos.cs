@@ -18,15 +18,18 @@ namespace Software_de_taquilla.Views.UserViews
         public int cantidad;
         public int contador;
         public double monto;
-        public Asientos(Movie mv, int cant, double monto)
+        public List<Object> objetos;
+        public List<int> id_asientos = new List<int>();
+        public Asientos(List<Object> objetos)
         {
-            this.monto = monto;
+            this.objetos = objetos;
+            this.monto = (double)objetos[4];
             this.contador = 0;
-            this.cantidad = cant;
-            this.movie = mv;
+            this.cantidad = (int)objetos[3];
+            this.movie = (Movie?)objetos[2];
             InitializeComponent();
             this.createEffects();
-            txt_asientos.Text = cant.ToString();
+            txt_asientos.Text = this.cantidad.ToString();
             this.fillData();
         }
 
@@ -123,11 +126,12 @@ namespace Software_de_taquilla.Views.UserViews
                         string asiento = name.Substring(pos + 2);
                         int id = Convert.ToInt32(num.ToString() + asiento);
                         asidao.updateAsiento(id, 1);
+                        id_asientos.Add(id);
                     }
                 }
             }
             MessageBox.Show("Asientos reserados temporalmente");
-            Pagos pagosForm = new Pagos(monto);
+            Pagos pagosForm = new Pagos(objetos, id_asientos);
             this.Visible = false;
             pagosForm.ShowDialog();
             this.Visible = true;

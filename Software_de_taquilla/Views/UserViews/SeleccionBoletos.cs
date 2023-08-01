@@ -14,9 +14,11 @@ namespace Software_de_taquilla.Views.UserViews
     public partial class SeleccionBoletos : Form
     {
         public Movie movie;
-        public SeleccionBoletos(Movie mov)
+        public List<Object> objetos;
+        public SeleccionBoletos(List<Object> objetos)
         {
-            this.movie = mov;
+            this.objetos = objetos;
+            this.movie = (Movie?)this.objetos[2];
             InitializeComponent();
         }
 
@@ -63,7 +65,13 @@ namespace Software_de_taquilla.Views.UserViews
             double monto = Convert.ToInt32(txt_n1.Text) * 46 + Convert.ToInt32(txt_n2.Text) * 39 + Convert.ToInt32(txt_n3.Text) * 39;
 
             this.Visible = false;
-            Asientos asi = new Asientos(movie, cantidad, monto);
+            //Asientos asi = new Asientos(movie, cantidad, monto);
+            this.objetos.Add(cantidad);
+            this.objetos.Add(monto);
+            this.objetos.Add(Convert.ToInt32(txt_n1.Text));
+            this.objetos.Add(Convert.ToInt32(txt_n2.Text));
+            this.objetos.Add(Convert.ToInt32(txt_n3.Text));
+            Asientos asi = new Asientos(this.objetos);
             asi.ShowDialog();
             this.Visible = true;
         }
