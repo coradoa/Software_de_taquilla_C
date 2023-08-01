@@ -31,15 +31,14 @@ namespace Software_de_taquilla.Views.UserViews
         {
             VentaDao vd = new VentaDao();
             BoletoDao bd = new BoletoDao();
-
             vd.insertVenta((double)this.objetos[4], (int)this.objetos[1]);
+            int lastId = vd.getlastID();
             int contador = 0;
             for (int i = 5; i < 8; i++)
             {
                 int cant_boletos = (int)this.objetos[i];
                 for (int j = 0; j < cant_boletos; j++)
                 {
-                    int lastId = vd.getlastID();
                     Movie mov = (Movie?)this.objetos[2];
                     int id_cine = (int)this.objetos[1];
                     string clas = "";

@@ -9,14 +9,17 @@ namespace Software_de_taquilla.Models.Dao
 {
     public class BoletoDao : DBContext
     {
+
+        public void open() { this.connection.Open(); }
+        public void close() { this.connection.Close(); }
         public void insertBoleto(int idv, int idp, int idc, int idas, double pr, string cl)
         {
-            this.connection.Open();
+            open();
             string sql = "insert into boleto(id_venta, id_pelicula, id_cine, id_asiento, precio, clasificacion)";
             sql += "values('" + idv + "', '" + idp + "', '" + idc + "', '" + idas + "', '" + pr + "', '" + cl + "');";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
-            this.connection.Close();
+            close();
         }
     }
 }
