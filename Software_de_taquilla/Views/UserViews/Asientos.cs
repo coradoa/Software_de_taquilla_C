@@ -53,6 +53,7 @@ namespace Software_de_taquilla.Views.UserViews
                             if (asi.estado == 1)
                             {
                                 button.BackColor = Color.Red;
+                                button.Enabled=false;
                             }
                             else
                             {
