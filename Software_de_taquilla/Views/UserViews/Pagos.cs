@@ -57,7 +57,7 @@ namespace Software_de_taquilla.Views.UserViews
                 }
             }
             EmailSender.sendEmail(txt_correo.Text);
-            PdfBuilder.createInvoice();
+            PdfBuilder.createInvoice(txt_correo.Text, lastId.ToString(), this.monto.ToString());
             MessageBox.Show("Pago realizado, factura enviada a su correo");
         }
 
