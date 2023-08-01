@@ -11,6 +11,12 @@ using System.Windows.Forms;
 using Software_de_taquilla.Models.Dto;
 using Software_de_taquilla.Helpers;
 
+
+using iTextSharp.text;
+using System.IO;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+
 namespace Software_de_taquilla.Views.UserViews
 {
     public partial class Pagos : Form
@@ -51,7 +57,11 @@ namespace Software_de_taquilla.Views.UserViews
                 }
             }
             EmailSender.sendEmail(txt_correo.Text);
+            PdfBuilder.createInvoice();
             MessageBox.Show("Pago realizado, factura enviada a su correo");
         }
+
+
+
     }
 }
