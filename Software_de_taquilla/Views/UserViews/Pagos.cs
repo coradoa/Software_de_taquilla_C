@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Software_de_taquilla.Models.Dao;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,61 +8,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Views.UserViews
 {
     public partial class Pagos : Form
     {
-        public Pagos()
+        public double monto;
+        public List<int> asientos;
+        public List<Object> objetos;
+        public Pagos(List<Object> objetos, List<int> asi)
         {
+            this.objetos = objetos;
+            this.asientos = asi;
+            this.monto = (double)objetos[4];
             InitializeComponent();
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
+            txt_monto.Text = this.monto.ToString();
 
         }
 
-        private void txt_correo_Leave(object sender, EventArgs e)
+        private void btn_cobro_Click(object sender, EventArgs e)
         {
-
-            txt_correo.Text = "ejemplo♦gmail.com";
-            txt_correo.ForeColor = SystemColors.WindowFrame;
-        }
-
-        private void txt_correo_Click(object sender, EventArgs e)
-        {
-            txt_correo.Text = "";
-            txt_correo.ForeColor = Color.Black;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_telefono_Click(object sender, EventArgs e)
-        {
-            txt_telefono.Text = "";
-            txt_telefono.ForeColor = Color.Black;
-        }
-
-        private void txt_telefono_Leave(object sender, EventArgs e)
-        {
-            txt_telefono.Text = "Telefono";
-            txt_telefono.ForeColor = SystemColors.WindowFrame;
-        }
-
-        private void txt_monto_Click(object sender, EventArgs e)
-        {
-            txt_monto.Text = "";
-            txt_monto.ForeColor = Color.Black;
-        }
-
-        private void txt_monto_Leave(object sender, EventArgs e)
-        {
-            txt_monto.Text = "Q.245.00 ";
-            txt_monto.ForeColor = SystemColors.WindowFrame;
+            VentaDao vd = new VentaDao();
+            BoletoDao bd = new BoletoDao();
+            vd.insertVenta((double)this.objetos[4], (int)this.objetos[1]);
+            int lastId = vd.getlastID();
+            int contador = 0;
+            for (int i = 5; i < 8; i++)
+            {
+                int cant_boletos = (int)this.objetos[i];
+                for (int j = 0; j < cant_boletos; j++)
+                {
+                    Movie mov = (Movie?)this.objetos[2];
+                    int id_cine = (int)this.objetos[1];
+                    string clas = "Ninguna";
+                    if (i == 5) clas = "Adulto";
+                    if (i == 6) clas = "Niños";
+                    if (i == 7) clas = "Tercera Edad";
+                    bd.insertBoleto(lastId, mov.id, id_cine, this.asientos[contador], this.monto, clas);
+                    contador++;
+                }
+            }
+            MessageBox.Show("Pago realizado");
         }
     }
 }
