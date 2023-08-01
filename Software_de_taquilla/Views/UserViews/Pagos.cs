@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Software_de_taquilla.Models.Dto;
+using Software_de_taquilla.Helpers;
 
 namespace Software_de_taquilla.Views.UserViews
 {
@@ -49,7 +50,8 @@ namespace Software_de_taquilla.Views.UserViews
                     contador++;
                 }
             }
-            MessageBox.Show("Pago realizado");
+            EmailSender.sendEmail(txt_correo.Text);
+            MessageBox.Show("Pago realizado, factura enviada a su correo");
         }
     }
 }

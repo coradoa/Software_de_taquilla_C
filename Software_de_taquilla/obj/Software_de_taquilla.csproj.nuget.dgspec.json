@@ -40,6 +40,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "FluentEmail.Core": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.1.0, )"

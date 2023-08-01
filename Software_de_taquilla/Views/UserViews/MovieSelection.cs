@@ -18,7 +18,6 @@ namespace Software_de_taquilla.Views.UserViews
         public List<Object> objetos;
         public MovieSelection(List<Object> objetos)
         {
-            MessageBox.Show(objetos.Count.ToString());
             this.objetos = objetos;
             this.movie = (Movie?)this.objetos[2];
             InitializeComponent();
