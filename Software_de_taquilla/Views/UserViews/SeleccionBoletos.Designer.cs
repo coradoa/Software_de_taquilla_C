@@ -28,255 +28,270 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            txt_n1 = new TextBox();
-            txt_n2 = new TextBox();
-            txt_n3 = new TextBox();
-            btna_1 = new Button();
-            btna_2 = new Button();
-            btnn_2 = new Button();
-            btnn_1 = new Button();
-            btn_e2 = new Button();
-            btn_e1 = new Button();
-            btn_continuar = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_n1 = new System.Windows.Forms.TextBox();
+            this.txt_n2 = new System.Windows.Forms.TextBox();
+            this.txt_n3 = new System.Windows.Forms.TextBox();
+            this.btna_1 = new System.Windows.Forms.Button();
+            this.btna_2 = new System.Windows.Forms.Button();
+            this.btnn_2 = new System.Windows.Forms.Button();
+            this.btnn_1 = new System.Windows.Forms.Button();
+            this.btn_e2 = new System.Windows.Forms.Button();
+            this.btn_e1 = new System.Windows.Forms.Button();
+            this.btn_continuar = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(230, 55);
-            label1.Name = "label1";
-            label1.Size = new Size(283, 30);
-            label1.TabIndex = 0;
-            label1.Text = "Selecciona tus boletos";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(263, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(342, 37);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Selecciona tus boletos";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(307, 119);
-            label2.Name = "label2";
-            label2.Size = new Size(122, 21);
-            label2.TabIndex = 1;
-            label2.Text = "TRADICIONAL";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(351, 159);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(142, 23);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "TRADICIONAL";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(138, 189);
-            label3.Name = "label3";
-            label3.Size = new Size(57, 17);
-            label3.TabIndex = 2;
-            label3.Text = "ADULTO";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(158, 252);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 21);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "ADULTO";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(138, 246);
-            label4.Name = "label4";
-            label4.Size = new Size(48, 17);
-            label4.TabIndex = 3;
-            label4.Text = "NIÑOS";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(158, 328);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 21);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "NIÑOS";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(138, 307);
-            label5.Name = "label5";
-            label5.Size = new Size(83, 17);
-            label5.TabIndex = 4;
-            label5.Text = "3 ERA EDAD";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(158, 409);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 21);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "3 ERA EDAD";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(307, 189);
-            label6.Name = "label6";
-            label6.Size = new Size(33, 17);
-            label6.TabIndex = 5;
-            label6.Text = "Q46";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(351, 252);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 21);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Q46";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(307, 246);
-            label7.Name = "label7";
-            label7.Size = new Size(33, 17);
-            label7.TabIndex = 6;
-            label7.Text = "Q39";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(351, 328);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(43, 21);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Q39";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century Gothic", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(307, 307);
-            label8.Name = "label8";
-            label8.Size = new Size(33, 17);
-            label8.TabIndex = 7;
-            label8.Text = "Q39";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(351, 409);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(43, 21);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Q39";
             // 
             // txt_n1
             // 
-            txt_n1.BorderStyle = BorderStyle.FixedSingle;
-            txt_n1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_n1.Location = new Point(457, 184);
-            txt_n1.Multiline = true;
-            txt_n1.Name = "txt_n1";
-            txt_n1.ReadOnly = true;
-            txt_n1.Size = new Size(39, 29);
-            txt_n1.TabIndex = 8;
-            txt_n1.Text = "0";
+            this.txt_n1.BackColor = System.Drawing.Color.White;
+            this.txt_n1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_n1.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n1.Location = new System.Drawing.Point(522, 245);
+            this.txt_n1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_n1.Multiline = true;
+            this.txt_n1.Name = "txt_n1";
+            this.txt_n1.ReadOnly = true;
+            this.txt_n1.Size = new System.Drawing.Size(44, 38);
+            this.txt_n1.TabIndex = 8;
+            this.txt_n1.Text = "0";
             // 
             // txt_n2
             // 
-            txt_n2.BorderStyle = BorderStyle.FixedSingle;
-            txt_n2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_n2.Location = new Point(457, 245);
-            txt_n2.Multiline = true;
-            txt_n2.Name = "txt_n2";
-            txt_n2.ReadOnly = true;
-            txt_n2.Size = new Size(39, 29);
-            txt_n2.TabIndex = 9;
-            txt_n2.Text = "0";
+            this.txt_n2.BackColor = System.Drawing.Color.White;
+            this.txt_n2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_n2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n2.Location = new System.Drawing.Point(522, 327);
+            this.txt_n2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_n2.Multiline = true;
+            this.txt_n2.Name = "txt_n2";
+            this.txt_n2.ReadOnly = true;
+            this.txt_n2.Size = new System.Drawing.Size(44, 38);
+            this.txt_n2.TabIndex = 9;
+            this.txt_n2.Text = "0";
             // 
             // txt_n3
             // 
-            txt_n3.BorderStyle = BorderStyle.FixedSingle;
-            txt_n3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_n3.Location = new Point(457, 306);
-            txt_n3.Multiline = true;
-            txt_n3.Name = "txt_n3";
-            txt_n3.ReadOnly = true;
-            txt_n3.Size = new Size(39, 29);
-            txt_n3.TabIndex = 10;
-            txt_n3.Text = "0";
+            this.txt_n3.BackColor = System.Drawing.Color.White;
+            this.txt_n3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_n3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_n3.Location = new System.Drawing.Point(522, 408);
+            this.txt_n3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_n3.Multiline = true;
+            this.txt_n3.Name = "txt_n3";
+            this.txt_n3.ReadOnly = true;
+            this.txt_n3.Size = new System.Drawing.Size(44, 38);
+            this.txt_n3.TabIndex = 10;
+            this.txt_n3.Text = "0";
             // 
             // btna_1
             // 
-            btna_1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btna_1.Location = new Point(547, 184);
-            btna_1.Name = "btna_1";
-            btna_1.Size = new Size(42, 29);
-            btna_1.TabIndex = 11;
-            btna_1.Text = "+";
-            btna_1.UseVisualStyleBackColor = true;
-            btna_1.Click += btna_1_Click;
+            this.btna_1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btna_1.Location = new System.Drawing.Point(625, 245);
+            this.btna_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btna_1.Name = "btna_1";
+            this.btna_1.Size = new System.Drawing.Size(48, 39);
+            this.btna_1.TabIndex = 11;
+            this.btna_1.Text = "+";
+            this.btna_1.UseVisualStyleBackColor = true;
+            this.btna_1.Click += new System.EventHandler(this.btna_1_Click);
             // 
             // btna_2
             // 
-            btna_2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btna_2.Location = new Point(595, 184);
-            btna_2.Name = "btna_2";
-            btna_2.Size = new Size(42, 29);
-            btna_2.TabIndex = 12;
-            btna_2.Text = "-";
-            btna_2.TextAlign = ContentAlignment.TopCenter;
-            btna_2.UseVisualStyleBackColor = true;
-            btna_2.Click += btna_2_Click;
+            this.btna_2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btna_2.Location = new System.Drawing.Point(680, 245);
+            this.btna_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btna_2.Name = "btna_2";
+            this.btna_2.Size = new System.Drawing.Size(48, 39);
+            this.btna_2.TabIndex = 12;
+            this.btna_2.Text = "-";
+            this.btna_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btna_2.UseVisualStyleBackColor = true;
+            this.btna_2.Click += new System.EventHandler(this.btna_2_Click);
             // 
             // btnn_2
             // 
-            btnn_2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnn_2.Location = new Point(595, 245);
-            btnn_2.Name = "btnn_2";
-            btnn_2.Size = new Size(42, 29);
-            btnn_2.TabIndex = 14;
-            btnn_2.Text = "-";
-            btnn_2.TextAlign = ContentAlignment.TopCenter;
-            btnn_2.UseVisualStyleBackColor = true;
-            btnn_2.Click += btnn_2_Click;
+            this.btnn_2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnn_2.Location = new System.Drawing.Point(680, 327);
+            this.btnn_2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnn_2.Name = "btnn_2";
+            this.btnn_2.Size = new System.Drawing.Size(48, 39);
+            this.btnn_2.TabIndex = 14;
+            this.btnn_2.Text = "-";
+            this.btnn_2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnn_2.UseVisualStyleBackColor = true;
+            this.btnn_2.Click += new System.EventHandler(this.btnn_2_Click);
             // 
             // btnn_1
             // 
-            btnn_1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnn_1.Location = new Point(547, 245);
-            btnn_1.Name = "btnn_1";
-            btnn_1.Size = new Size(42, 29);
-            btnn_1.TabIndex = 13;
-            btnn_1.Text = "+";
-            btnn_1.UseVisualStyleBackColor = true;
-            btnn_1.Click += btnn_1_Click;
+            this.btnn_1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnn_1.Location = new System.Drawing.Point(625, 327);
+            this.btnn_1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnn_1.Name = "btnn_1";
+            this.btnn_1.Size = new System.Drawing.Size(48, 39);
+            this.btnn_1.TabIndex = 13;
+            this.btnn_1.Text = "+";
+            this.btnn_1.UseVisualStyleBackColor = true;
+            this.btnn_1.Click += new System.EventHandler(this.btnn_1_Click);
             // 
             // btn_e2
             // 
-            btn_e2.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_e2.Location = new Point(595, 306);
-            btn_e2.Name = "btn_e2";
-            btn_e2.Size = new Size(42, 29);
-            btn_e2.TabIndex = 16;
-            btn_e2.Text = "-";
-            btn_e2.TextAlign = ContentAlignment.TopCenter;
-            btn_e2.UseVisualStyleBackColor = true;
-            btn_e2.Click += btn_e2_Click;
+            this.btn_e2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_e2.Location = new System.Drawing.Point(680, 408);
+            this.btn_e2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_e2.Name = "btn_e2";
+            this.btn_e2.Size = new System.Drawing.Size(48, 39);
+            this.btn_e2.TabIndex = 16;
+            this.btn_e2.Text = "-";
+            this.btn_e2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_e2.UseVisualStyleBackColor = true;
+            this.btn_e2.Click += new System.EventHandler(this.btn_e2_Click);
             // 
             // btn_e1
             // 
-            btn_e1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btn_e1.Location = new Point(547, 306);
-            btn_e1.Name = "btn_e1";
-            btn_e1.Size = new Size(42, 29);
-            btn_e1.TabIndex = 15;
-            btn_e1.Text = "+";
-            btn_e1.UseVisualStyleBackColor = true;
-            btn_e1.Click += btn_e1_Click;
+            this.btn_e1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btn_e1.Location = new System.Drawing.Point(625, 408);
+            this.btn_e1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_e1.Name = "btn_e1";
+            this.btn_e1.Size = new System.Drawing.Size(48, 39);
+            this.btn_e1.TabIndex = 15;
+            this.btn_e1.Text = "+";
+            this.btn_e1.UseVisualStyleBackColor = true;
+            this.btn_e1.Click += new System.EventHandler(this.btn_e1_Click);
             // 
             // btn_continuar
             // 
-            btn_continuar.BackColor = Color.MidnightBlue;
-            btn_continuar.FlatAppearance.BorderSize = 0;
-            btn_continuar.FlatStyle = FlatStyle.Flat;
-            btn_continuar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_continuar.ForeColor = SystemColors.ControlLightLight;
-            btn_continuar.Location = new Point(281, 374);
-            btn_continuar.Name = "btn_continuar";
-            btn_continuar.Size = new Size(165, 33);
-            btn_continuar.TabIndex = 17;
-            btn_continuar.Text = "CONTINUAR";
-            btn_continuar.UseVisualStyleBackColor = false;
-            btn_continuar.Click += btn_continuar_Click;
+            this.btn_continuar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_continuar.FlatAppearance.BorderSize = 0;
+            this.btn_continuar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_continuar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_continuar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_continuar.Location = new System.Drawing.Point(321, 499);
+            this.btn_continuar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_continuar.Name = "btn_continuar";
+            this.btn_continuar.Size = new System.Drawing.Size(189, 44);
+            this.btn_continuar.TabIndex = 17;
+            this.btn_continuar.Text = "CONTINUAR";
+            this.btn_continuar.UseVisualStyleBackColor = false;
+            this.btn_continuar.Click += new System.EventHandler(this.btn_continuar_Click);
             // 
             // SeleccionBoletos
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(746, 450);
-            Controls.Add(btn_continuar);
-            Controls.Add(btn_e2);
-            Controls.Add(btn_e1);
-            Controls.Add(btnn_2);
-            Controls.Add(btnn_1);
-            Controls.Add(btna_2);
-            Controls.Add(btna_1);
-            Controls.Add(txt_n3);
-            Controls.Add(txt_n2);
-            Controls.Add(txt_n1);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Name = "SeleccionBoletos";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "SeleccionBoletos";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(853, 600);
+            this.Controls.Add(this.btn_continuar);
+            this.Controls.Add(this.btn_e2);
+            this.Controls.Add(this.btn_e1);
+            this.Controls.Add(this.btnn_2);
+            this.Controls.Add(this.btnn_1);
+            this.Controls.Add(this.btna_2);
+            this.Controls.Add(this.btna_1);
+            this.Controls.Add(this.txt_n3);
+            this.Controls.Add(this.txt_n2);
+            this.Controls.Add(this.txt_n1);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "SeleccionBoletos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "SeleccionBoletos";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
