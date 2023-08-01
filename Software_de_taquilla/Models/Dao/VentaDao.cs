@@ -8,20 +8,12 @@ using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Models.Dao
 {
-    public class VentaDao: DBContext
+    public class VentaDao : DBContext
     {
-
-        public bool isConnected()
+        public void insertVenta(double total, int id_cine)
         {
             this.connection.Open();
-            return this.connection != null;
-        }
-
-
-        public void insertVenta(int id_venta, double total, int id_cine)
-        {
-            this.connection.Open();
-            string sql = "insert into venta(id_venta, total, id_cine)values('"+id_venta+"', '"+total+"', '"+id_cine+"')";
+            string sql = "insert into venta(total, id_cine, fecha)values('" + total + "', '" + id_cine + "', NOW())";
             MySqlCommand cursor = new MySqlCommand(sql, this.connection);
             cursor.ExecuteNonQuery();
             this.connection.Close();
@@ -45,6 +37,23 @@ namespace Software_de_taquilla.Models.Dao
             this.connection.Close();
             return ventas;
         }
+
+        public int getlastID()
+        {
+            this.connection.Open();
+            List<Venta> ventas = new List<Venta>();
+            string sql = "SELECT LAST_INSERT_ID();";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            MySqlDataReader reader = cursor.ExecuteReader();
+            if (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                return id;
+            }
+            this.connection.Close();
+            return -1;
+        }
+
 
     }
 }

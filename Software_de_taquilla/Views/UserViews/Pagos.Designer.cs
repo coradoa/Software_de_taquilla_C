@@ -77,8 +77,6 @@
             txt_correo.PlaceholderText = "ejemplo@gmail.com";
             txt_correo.Size = new Size(290, 25);
             txt_correo.TabIndex = 1;
-            txt_correo.Click += txt_correo_Click;
-            txt_correo.Leave += txt_correo_Leave;
             // 
             // txt_telefono
             // 
@@ -91,9 +89,6 @@
             txt_telefono.PlaceholderText = "Telefono";
             txt_telefono.Size = new Size(242, 25);
             txt_telefono.TabIndex = 2;
-            txt_telefono.Click += txt_telefono_Click;
-            txt_telefono.TextChanged += textBox2_TextChanged;
-            txt_telefono.Leave += txt_telefono_Leave;
             // 
             // txt_monto
             // 
@@ -107,8 +102,6 @@
             txt_monto.ReadOnly = true;
             txt_monto.Size = new Size(290, 25);
             txt_monto.TabIndex = 3;
-            txt_monto.Click += txt_monto_Click;
-            txt_monto.Leave += txt_monto_Leave;
             // 
             // txt_notarjeta
             // 
