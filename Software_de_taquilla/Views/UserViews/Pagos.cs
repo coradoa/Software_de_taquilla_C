@@ -12,9 +12,13 @@ namespace Software_de_taquilla.Views.UserViews
 {
     public partial class Pagos : Form
     {
-        public Pagos()
+        public double monto;
+        public Pagos(double monto)
         {
+            this.monto = monto;
             InitializeComponent();
+            txt_monto.Text = this.monto.ToString();
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
