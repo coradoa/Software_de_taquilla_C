@@ -35,7 +35,6 @@
             txt_notarjeta = new TextBox();
             dateTimePicker1 = new DateTimePicker();
             txt_cvv = new TextBox();
-            label2 = new Label();
             label3 = new Label();
             txt_fechav = new TextBox();
             rb_pago = new RadioButton();
@@ -135,20 +134,9 @@
             txt_cvv.Location = new Point(33, 254);
             txt_cvv.Margin = new Padding(3, 2, 3, 2);
             txt_cvv.Name = "txt_cvv";
+            txt_cvv.PlaceholderText = "CVV";
             txt_cvv.Size = new Size(290, 25);
             txt_cvv.TabIndex = 6;
-            txt_cvv.Text = "CVV";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.None;
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(33, 232);
-            label2.Name = "label2";
-            label2.Size = new Size(43, 20);
-            label2.TabIndex = 7;
-            label2.Text = "CVV";
             // 
             // label3
             // 
@@ -284,7 +272,6 @@
             Controls.Add(rb_pago);
             Controls.Add(txt_fechav);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(txt_cvv);
             Controls.Add(dateTimePicker1);
             Controls.Add(txt_notarjeta);
@@ -316,7 +303,6 @@
         private TextBox txt_notarjeta;
         private DateTimePicker dateTimePicker1;
         private TextBox txt_cvv;
-        private Label label2;
         private Label label3;
         private TextBox txt_fechav;
         private RadioButton rb_pago;
