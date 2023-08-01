@@ -1,4 +1,5 @@
-﻿namespace Software_de_taquilla.Views.UserViews
+﻿
+namespace Software_de_taquilla.Views.UserViews
 {
     partial class Asientos
     {
