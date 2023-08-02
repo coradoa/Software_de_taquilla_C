@@ -17,6 +17,15 @@ namespace Software_de_taquilla.Controllers
         {
             this.view = view;
             this.view.btn_login.Click += new EventHandler(this.buildView);
+            this.view.label_reg.Click += new EventHandler(this.registerUser);
+        }
+
+        public void registerUser(Object sender, EventArgs e)
+        {
+            this.view.Visible = false;
+            Register rg = new Register();
+            rg.ShowDialog();
+            this.view.Visible = true;
         }
 
         public void openByRole(int role)

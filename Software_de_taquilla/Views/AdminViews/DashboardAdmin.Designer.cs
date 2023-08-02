@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardAdmin));
             PanelMenu = new Panel();
+            label2 = new Label();
+            pictureBox1 = new PictureBox();
             btn_peliculas = new Button();
-            pic_exit = new PictureBox();
             btn_usuarios = new Button();
             btnMenuAyuda = new Button();
             btn_reportes = new Button();
@@ -43,7 +44,7 @@
             label1 = new Label();
             panel_container = new Panel();
             PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_exit).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             PanelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Pic_Perfil).BeginInit();
             SuspendLayout();
@@ -52,8 +53,9 @@
             // 
             PanelMenu.AutoScroll = true;
             PanelMenu.BackColor = Color.FromArgb(12, 62, 85);
+            PanelMenu.Controls.Add(label2);
+            PanelMenu.Controls.Add(pictureBox1);
             PanelMenu.Controls.Add(btn_peliculas);
-            PanelMenu.Controls.Add(pic_exit);
             PanelMenu.Controls.Add(btn_usuarios);
             PanelMenu.Controls.Add(btnMenuAyuda);
             PanelMenu.Controls.Add(btn_reportes);
@@ -64,6 +66,29 @@
             PanelMenu.Name = "PanelMenu";
             PanelMenu.Size = new Size(239, 498);
             PanelMenu.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(181, 476);
+            label2.Name = "label2";
+            label2.Size = new Size(31, 15);
+            label2.TabIndex = 11;
+            label2.Text = "Salir";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(214, 474);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(19, 19);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // btn_peliculas
             // 
@@ -85,16 +110,6 @@
             btn_peliculas.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_peliculas.UseVisualStyleBackColor = true;
             btn_peliculas.Click += btn_peliculas_Click;
-            // 
-            // pic_exit
-            // 
-            pic_exit.Image = Properties.Resources.exit;
-            pic_exit.Location = new Point(208, 465);
-            pic_exit.Name = "pic_exit";
-            pic_exit.Size = new Size(25, 21);
-            pic_exit.SizeMode = PictureBoxSizeMode.Zoom;
-            pic_exit.TabIndex = 8;
-            pic_exit.TabStop = false;
             // 
             // btn_usuarios
             // 
@@ -253,7 +268,8 @@
             Name = "DashboardAdmin";
             Text = "DashboardAdmin";
             PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pic_exit).EndInit();
+            PanelMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             PanelDatos.ResumeLayout(false);
             PanelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)Pic_Perfil).EndInit();
@@ -272,8 +288,9 @@
         private Button btn_usuarios;
         private Button btnMenuAyuda;
         private Button btn_reportes;
-        private PictureBox pic_exit;
         private Panel panel_container;
         private Button btn_peliculas;
+        private Label label2;
+        private PictureBox pictureBox1;
     }
 }

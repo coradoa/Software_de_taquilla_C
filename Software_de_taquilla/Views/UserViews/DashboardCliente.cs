@@ -61,5 +61,10 @@ namespace Software_de_taquilla.Views.UserViews
         {
             this.openForm(new Cartelera());
         }
+
+        private void pic_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
