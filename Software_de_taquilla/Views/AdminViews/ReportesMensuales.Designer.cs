@@ -30,9 +30,10 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            label3 = new Label();
-            comboBox1 = new ComboBox();
+            combo_mes = new ComboBox();
+            combo_filtro = new ComboBox();
             data_grid = new DataGridView();
+            label3 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
             SuspendLayout();
@@ -52,6 +53,8 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.None;
+            panel1.Controls.Add(combo_mes);
+            panel1.Controls.Add(combo_filtro);
             panel1.Controls.Add(data_grid);
             panel1.Controls.Add(label3);
             panel1.Location = new Point(12, 70);
@@ -60,27 +63,30 @@
             panel1.Size = new Size(807, 369);
             panel1.TabIndex = 5;
             // 
-            // label3
+            // combo_mes
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(12, 62, 85);
-            label3.Location = new Point(19, 10);
-            label3.Name = "label3";
-            label3.Size = new Size(270, 19);
-            label3.TabIndex = 4;
-            label3.Text = "Peliculas Taquilleras Mensuales";
+            combo_mes.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_mes.FlatStyle = FlatStyle.System;
+            combo_mes.FormattingEnabled = true;
+            combo_mes.Items.AddRange(new object[] { "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre" });
+            combo_mes.Location = new Point(521, 10);
+            combo_mes.Margin = new Padding(3, 2, 3, 2);
+            combo_mes.Name = "combo_mes";
+            combo_mes.Size = new Size(133, 23);
+            combo_mes.TabIndex = 6;
             // 
-            // comboBox1
+            // combo_filtro
             // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.System;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(686, 45);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 0;
+            combo_filtro.DropDownStyle = ComboBoxStyle.DropDownList;
+            combo_filtro.FlatStyle = FlatStyle.System;
+            combo_filtro.FormattingEnabled = true;
+            combo_filtro.Items.AddRange(new object[] { "Semana 1", "Semana 2", "Semana 3", "Semana 4" });
+            combo_filtro.Location = new Point(671, 10);
+            combo_filtro.Margin = new Padding(3, 2, 3, 2);
+            combo_filtro.Name = "combo_filtro";
+            combo_filtro.Size = new Size(133, 23);
+            combo_filtro.TabIndex = 0;
+            combo_filtro.SelectedIndexChanged += combo_filtro_SelectedIndexChanged;
             // 
             // data_grid
             // 
@@ -97,13 +103,23 @@
             data_grid.Size = new Size(807, 323);
             data_grid.TabIndex = 5;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Bookman Old Style", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(12, 62, 85);
+            label3.Location = new Point(19, 10);
+            label3.Name = "label3";
+            label3.Size = new Size(270, 19);
+            label3.TabIndex = 4;
+            label3.Text = "Peliculas Taquilleras Mensuales";
+            // 
             // ReportesMensuales
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(831, 450);
-            Controls.Add(comboBox1);
             Controls.Add(panel1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
@@ -123,7 +139,8 @@
         private Label label1;
         private Panel panel1;
         private Label label3;
-        private ComboBox comboBox1;
+        private ComboBox combo_filtro;
         public DataGridView data_grid;
+        private ComboBox combo_mes;
     }
 }
