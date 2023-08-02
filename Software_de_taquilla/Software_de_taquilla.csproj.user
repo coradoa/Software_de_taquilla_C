@@ -50,15 +50,6 @@
     <Compile Update="Views\UserViews\Pagos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\UserViews\SedesHorariosCiudad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Views\UserViews\SedesHorariosJutiapa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Views\UserViews\SedesHorariosXela.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\UserViews\SeleccionBoletos.cs">
       <SubType>Form</SubType>
     </Compile>

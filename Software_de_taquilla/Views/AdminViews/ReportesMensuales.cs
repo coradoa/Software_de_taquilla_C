@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Software_de_taquilla.Models.Dao;
+using Software_de_taquilla.Models.Dto;
 
 namespace Software_de_taquilla.Views.AdminViews
 {
@@ -17,25 +19,12 @@ namespace Software_de_taquilla.Views.AdminViews
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        public void fillData()
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Tiempo_SelectedItemChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_IngresoM_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btn_IngresoS_Click(object sender, EventArgs e)
         {
