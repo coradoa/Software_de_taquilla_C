@@ -268,6 +268,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(832, 458);
             Name = "DashboardAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DashboardAdmin";
             FormClosed += DashboardAdmin_FormClosed;
             PanelMenu.ResumeLayout(false);

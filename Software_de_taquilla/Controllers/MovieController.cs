@@ -47,7 +47,7 @@ namespace Software_de_taquilla.Controllers
             MovieDao dao = new MovieDao();
             int id = Convert.ToInt32(this.view.data_grid.SelectedRows[0].Cells[0].Value);
             dao.updateMovie(id, name, image_name, d, listing, room, publico);
-            this.saveImage(image, image_name);
+            this.deleteImage(image_name);
             this.view.btn_save.BackColor = Color.SeaGreen;
             view.printMessage("Pelicula Actualizada");
             view.clearTextBox();
@@ -92,6 +92,11 @@ namespace Software_de_taquilla.Controllers
         public void saveImage(string path, string image)
         {
             File.Copy(path, "./../../../images/" + image);
+        }
+
+        public void deleteImage(string image)
+        {
+            File.Delete("./../../../images/" + image);
         }
         public void buildComponent(Object sender, EventArgs e)
         {
