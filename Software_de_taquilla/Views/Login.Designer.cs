@@ -125,7 +125,7 @@
             // combo_role
             // 
             combo_role.DropDownStyle = ComboBoxStyle.DropDownList;
-            combo_role.FlatStyle = FlatStyle.Popup;
+            combo_role.FlatStyle = FlatStyle.System;
             combo_role.ForeColor = SystemColors.GrayText;
             combo_role.FormattingEnabled = true;
             combo_role.Items.AddRange(new object[] { "Administrador", "Empleado", "Cliente" });
@@ -162,7 +162,6 @@
             Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login";
-            Load += Login_Load_1;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

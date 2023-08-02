@@ -69,6 +69,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
@@ -80,6 +81,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(214, 474);
@@ -267,6 +269,7 @@
             MinimumSize = new Size(832, 458);
             Name = "DashboardAdmin";
             Text = "DashboardAdmin";
+            FormClosed += DashboardAdmin_FormClosed;
             PanelMenu.ResumeLayout(false);
             PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
