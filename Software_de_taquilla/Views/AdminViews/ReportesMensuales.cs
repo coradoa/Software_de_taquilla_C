@@ -17,12 +17,23 @@ namespace Software_de_taquilla.Views.AdminViews
         public ReportesMensuales()
         {
             InitializeComponent();
+            this.fillData();
         }
 
 
         public void fillData()
         {
-
+            VentaDao vdao = new VentaDao();
+            List<Venta> ventas = vdao.getVenta();
+            this.data_grid.ColumnCount = 4;
+            this.data_grid.Columns[0].Name = "ID";
+            this.data_grid.Columns[1].Name = "Cine";
+            this.data_grid.Columns[2].Name = "Fecha";
+            this.data_grid.Columns[3].Name = "Total";
+            foreach (Venta venta in ventas)
+            {
+                this.data_grid.Rows.Add(venta.id, venta.id_cine, venta.fecha, venta.total);
+            }
         }
 
 

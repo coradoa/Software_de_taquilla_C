@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
             label3 = new Label();
+            comboBox1 = new ComboBox();
             data_grid = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)data_grid).BeginInit();
@@ -60,17 +60,6 @@
             panel1.Size = new Size(807, 369);
             panel1.TabIndex = 5;
             // 
-            // comboBox1
-            // 
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.System;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(686, 45);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 0;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -82,14 +71,30 @@
             label3.TabIndex = 4;
             label3.Text = "Peliculas Taquilleras Mensuales";
             // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FlatStyle = FlatStyle.System;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(686, 45);
+            comboBox1.Margin = new Padding(3, 2, 3, 2);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(133, 23);
+            comboBox1.TabIndex = 0;
+            // 
             // data_grid
             // 
+            data_grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            data_grid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             data_grid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             data_grid.Dock = DockStyle.Bottom;
-            data_grid.Location = new Point(0, 32);
+            data_grid.Location = new Point(0, 46);
             data_grid.Name = "data_grid";
+            data_grid.RowHeadersVisible = false;
+            data_grid.RowHeadersWidth = 51;
             data_grid.RowTemplate.Height = 25;
-            data_grid.Size = new Size(807, 337);
+            data_grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            data_grid.Size = new Size(807, 323);
             data_grid.TabIndex = 5;
             // 
             // ReportesMensuales
@@ -119,6 +124,6 @@
         private Panel panel1;
         private Label label3;
         private ComboBox comboBox1;
-        private DataGridView data_grid;
+        public DataGridView data_grid;
     }
 }
