@@ -16,6 +16,7 @@ using iTextSharp.text;
 using System.IO;
 using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
+using MySqlX.XDevAPI.Relational;
 
 namespace Software_de_taquilla.Views.UserViews
 {
@@ -41,23 +42,32 @@ namespace Software_de_taquilla.Views.UserViews
             vd.insertVenta((double)this.objetos[4], (int)this.objetos[1]);
             int lastId = vd.getlastID();
             int contador = 0;
+            string filas = string.Empty;
             for (int i = 5; i < 8; i++)
             {
+
                 int cant_boletos = (int)this.objetos[i];
+                if (cant_boletos == 0) continue;
+                string clas = "Ninguna";
+                double precio = 39;
+                if (i == 5) { clas = "Adulto"; precio = 46; }
+                if (i == 6) clas = "Niños"; ;
+                if (i == 7) clas = "Tercera Edad";
+                filas += "<tr>";
+                filas += "<td>" + cant_boletos.ToString() + "</td>";
+                filas += "<td>" + clas + "</td>";
+                filas += "<td>" + precio.ToString() + "</td>";
+                filas += "<td>" + (precio * cant_boletos).ToString() + "</td>";
+                filas += "</tr>";
                 for (int j = 0; j < cant_boletos; j++)
                 {
                     Movie mov = (Movie?)this.objetos[2];
                     int id_cine = (int)this.objetos[1];
-                    string clas = "Ninguna";
-                    if (i == 5) clas = "Adulto";
-                    if (i == 6) clas = "Niños";
-                    if (i == 7) clas = "Tercera Edad";
-                    bd.insertBoleto(lastId, mov.id, id_cine, this.asientos[contador], this.monto, clas);
+                    bd.insertBoleto(lastId, mov.id, id_cine, this.asientos[contador], precio, clas);
                     contador++;
                 }
             }
-            EmailSender.sendEmail(txt_correo.Text);
-            PdfBuilder.createInvoice(txt_correo.Text, lastId.ToString(), this.monto.ToString());
+            PdfBuilder.createInvoice(txt_correo.Text, lastId.ToString(), this.monto.ToString(), filas);
             MessageBox.Show("Pago realizado, factura enviada a su correo");
         }
 

@@ -36,6 +36,7 @@
             label2 = new Label();
             label1 = new Label();
             combo_role = new ComboBox();
+            label_reg = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -133,12 +134,25 @@
             combo_role.Size = new Size(108, 23);
             combo_role.TabIndex = 5;
             // 
+            // label_reg
+            // 
+            label_reg.AutoSize = true;
+            label_reg.Cursor = Cursors.Hand;
+            label_reg.FlatStyle = FlatStyle.Flat;
+            label_reg.ForeColor = Color.FromArgb(33, 103, 206);
+            label_reg.Location = new Point(708, 312);
+            label_reg.Name = "label_reg";
+            label_reg.Size = new Size(64, 15);
+            label_reg.TabIndex = 6;
+            label_reg.Text = "Registrarse";
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(864, 376);
+            Controls.Add(label_reg);
             Controls.Add(combo_role);
             Controls.Add(label1);
             Controls.Add(panel1);
@@ -164,5 +178,6 @@
         public TextBox txt_user;
         public TextBox txt_pass;
         public ComboBox combo_role;
+        public Label label_reg;
     }
 }

@@ -31,7 +31,8 @@ namespace Software_de_taquilla.Models.Dao
                 int id = reader.GetInt32(0);
                 double total = reader.GetDouble(1);
                 int id_cine = reader.GetInt32(2);
-                Venta venta = new Venta(id, total, id_cine);
+                string fecha = reader.GetString(3);
+                Venta venta = new Venta(id, total, id_cine, fecha);
                 ventas.Add(venta);
             }
             this.connection.Close();
