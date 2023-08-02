@@ -72,6 +72,7 @@ namespace Software_de_taquilla.Views.UserViews
             bool done = false;
             if (this.contador >= this.cantidad) done = true;
             Button btn = (Button)sender;
+            if (btn.BackColor == System.Drawing.Color.Red) return;
             if (btn.BackColor == System.Drawing.Color.WhiteSmoke)
             {
                 if (done) return;

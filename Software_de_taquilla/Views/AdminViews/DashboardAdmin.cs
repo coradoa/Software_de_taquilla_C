@@ -77,5 +77,10 @@ namespace Software_de_taquilla.Views.AdminViews
         {
             this.openForm(new AdminViews.ReportesMensuales());
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
