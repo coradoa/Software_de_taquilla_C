@@ -26,20 +26,29 @@ namespace Software_de_taquilla.Controllers
 
         public void saveMovie(Object sender, EventArgs e)
         {
-            string name = view.txt_name.Text;
-            string publico = view.txt_publico.Text;
-            string d = view.txt_duracion.Text;
-            int listing = Convert.ToInt32(view.list_listing.Text);
-            int room = Convert.ToInt32(view.room_listing.Text);
-            string image = view.image_location;
-            string image_name = getImageName(image);
-            MovieDao dao = new MovieDao();
-            dao.insertMovie(name, image_name, d, listing, room, publico);
-            this.saveImage(image, image_name);
-            view.printMessage("Pelicula Agregada");
-            view.clearTextBox();
-            this.fillDataGrid();
+            try
+            {
+                string name = view.txt_name.Text;
+                string publico = view.txt_publico.Text;
+                string d = view.txt_duracion.Text;
+                int listing = Convert.ToInt32(view.list_listing.Text);
+                int room = Convert.ToInt32(view.room_listing.Text);
+                string image = view.image_location;
+                string image_name = getImageName(image);
+                MovieDao dao = new MovieDao();
+                dao.insertMovie(name, image_name, d, listing, room, publico);
+                this.saveImage(image, image_name);
+                view.printMessage("Pelicula Agregada");
+                view.clearTextBox();
+                this.fillDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al guardar la película: " + ex.Message,
+               "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         public string getImageName(string image)
         {
@@ -53,9 +62,17 @@ namespace Software_de_taquilla.Controllers
         }
         public void buildComponent(Object sender, EventArgs e)
         {
-            this.fillDataGrid();
-            this.fillListings();
-            this.fillRooms();
+            try
+            {
+                this.fillDataGrid();
+                this.fillListings();
+                this.fillRooms();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error a la hora de construir componente " +
+               ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         public void fillRooms()
@@ -81,20 +98,30 @@ namespace Software_de_taquilla.Controllers
 
         public void fillDataGrid()
         {
-            view.data_grid.Rows.Clear();
-            MovieDao dao = new MovieDao();
-            List<Movie> movies = dao.getMovies();
-            view.data_grid.ColumnCount = 6;
-            view.data_grid.Columns[0].Name = "ID";
-            view.data_grid.Columns[1].Name = "Nombre";
-            view.data_grid.Columns[2].Name = "Publico";
-            view.data_grid.Columns[3].Name = "Duracion";
-            view.data_grid.Columns[4].Name = "Cartelera";
-            view.data_grid.Columns[5].Name = "Sala";
-            foreach (Movie movie in movies)
+            try
             {
-                view.data_grid.Rows.Add(movie.id, movie.name, movie.public_, movie.duration, movie.id_listing, movie.id_room);
+                view.data_grid.Rows.Clear();
+                MovieDao dao = new MovieDao();
+                List<Movie> movies = dao.getMovies();
+                view.data_grid.ColumnCount = 6;
+                view.data_grid.Columns[0].Name = "ID";
+                view.data_grid.Columns[1].Name = "Nombre";
+                view.data_grid.Columns[2].Name = "Publico";
+                view.data_grid.Columns[3].Name = "Duracion";
+                view.data_grid.Columns[4].Name = "Cartelera";
+                view.data_grid.Columns[5].Name = "Sala";
+                foreach (Movie movie in movies)
+                {
+                    view.data_grid.Rows.Add(movie.id, movie.name, movie.public_, movie.duration, movie.id_listing, movie.id_room);
+                }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error al rellenar la tabla: " +
+               ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }
