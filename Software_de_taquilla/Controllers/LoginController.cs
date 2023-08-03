@@ -54,24 +54,35 @@ namespace Software_de_taquilla.Controllers
 
         private void buildView(Object sender, EventArgs e)
         {
-            UserDao myuser = new UserDao();
-            string user = this.view.txt_user.Text;
-            string pass = this.view.txt_pass.Text;
-            if (user.Equals("") || pass.Equals(""))
+            try { 
+                    UserDao myuser = new UserDao();
+                    string user = this.view.txt_user.Text;
+                    string pass = this.view.txt_pass.Text;
+                 if (user.Equals("") || pass.Equals(""))
+                 {
+                    MessageBox.Show("Debe llenar los campos antes de intentar loguearse");
+                    return;
+                 }
+
+                    int rol = this.view.combo_role.SelectedIndex;
+                    if (myuser.userExist(user, pass, rol + 1))
+                    {
+                     this.openByRole(rol + 1);
+                 }
+                    else
+                 {
+                    this.view.printMessage("Usuario o Contraseña incorrectos");
+                 }
+
+            }
+            catch (Exception ex)
             {
-                MessageBox.Show("Debe llenar los campos antes de intentar loguearse");
-                return;
+
+                MessageBox.Show("Error al intentar autenticar al usuario: " +
+               ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
 
-            int rol = this.view.combo_role.SelectedIndex;
-            if (myuser.userExist(user, pass, rol + 1))
-            {
-                this.openByRole(rol + 1);
-            }
-            else
-            {
-                this.view.printMessage("Usuario o Contraseña incorrectos");
-            }
         }
     }
 }
