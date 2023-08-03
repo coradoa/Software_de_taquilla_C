@@ -2158,19 +2158,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\d_car\\.nuget\\packages\\": {}
+    "C:\\Users\\olste\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+      "projectUniqueName": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
       "projectName": "Software_de_taquilla",
-      "projectPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
-      "packagesPath": "C:\\Users\\d_car\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d_car\\OneDrive\\Escritorio\\UMG\\4toaño\\2do semestre\\analisis de sistemas 2\\Proyecto1\\PROYECTO1\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
+      "projectPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\Software_de_taquilla.csproj",
+      "packagesPath": "C:\\Users\\olste\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olste\\Desktop\\Development\\work_space\\Software_de_taquilla_C\\Software_de_taquilla\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\d_car\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olste\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2236,7 +2236,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   },

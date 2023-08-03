@@ -65,6 +65,29 @@ namespace Software_de_taquilla.Models.Dao
 
         }
 
+
+        public void updateMovie(int id, string name, string image, string duration, int id_listing, int id_room, string p)
+        {
+            this.connection.Open();
+            string sql = "update pelicula set nombre='" + name + "',imagen='" + image + "', publico='" + p + "',";
+            sql += "duracion='" + duration + "', id_cartelera='" + id_listing + "', id_sala='" + id_room + "' where id='" + id + "'";
+            sql += "('" + name + "', '" + image + "' ,'" + p + "',  '" + duration + "', '" + id_listing + "', '" + id_room + "');";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
+        public void deleteMovie(int id)
+        {
+            this.connection.Open();
+            string sql = "delete from pelicula where id='" + id + "'";
+            MySqlCommand cursor = new MySqlCommand(sql, this.connection);
+            cursor.ExecuteNonQuery();
+            this.connection.Close();
+        }
+
+
+
         public List<Movie> getMovies(int id_c, int id_l)
         {
 

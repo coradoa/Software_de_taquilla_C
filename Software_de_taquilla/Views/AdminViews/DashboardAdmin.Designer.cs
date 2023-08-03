@@ -69,6 +69,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
@@ -80,6 +81,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(214, 474);
@@ -189,9 +191,10 @@
             btn_inicio.Padding = new Padding(60, 0, 0, 0);
             btn_inicio.Size = new Size(239, 45);
             btn_inicio.TabIndex = 2;
-            btn_inicio.Text = "    Inicio";
+            btn_inicio.Text = "    Horarios";
             btn_inicio.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_inicio.UseVisualStyleBackColor = true;
+            btn_inicio.Click += btn_inicio_Click;
             // 
             // PanelDatos
             // 
@@ -266,6 +269,7 @@
             Margin = new Padding(3, 2, 3, 2);
             MinimumSize = new Size(832, 458);
             Name = "DashboardAdmin";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DashboardAdmin";
             PanelMenu.ResumeLayout(false);
             PanelMenu.PerformLayout();

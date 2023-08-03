@@ -62,10 +62,6 @@ namespace Software_de_taquilla.Views.AdminViews
 
         private void btn_IngresoS_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
-            AdminViews.ReportesSemanales rp = new AdminViews.ReportesSemanales();
-            rp.ShowDialog();
-            this.Visible = true;
         }
 
         private void combo_filtro_SelectedIndexChanged(object sender, EventArgs e)
