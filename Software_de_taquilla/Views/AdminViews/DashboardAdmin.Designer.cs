@@ -191,9 +191,10 @@
             btn_inicio.Padding = new Padding(60, 0, 0, 0);
             btn_inicio.Size = new Size(239, 45);
             btn_inicio.TabIndex = 2;
-            btn_inicio.Text = "    Inicio";
+            btn_inicio.Text = "    Horarios";
             btn_inicio.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_inicio.UseVisualStyleBackColor = true;
+            btn_inicio.Click += btn_inicio_Click;
             // 
             // PanelDatos
             // 
@@ -270,7 +271,6 @@
             Name = "DashboardAdmin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DashboardAdmin";
-            FormClosed += DashboardAdmin_FormClosed;
             PanelMenu.ResumeLayout(false);
             PanelMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

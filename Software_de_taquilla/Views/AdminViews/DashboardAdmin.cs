@@ -78,8 +78,9 @@ namespace Software_de_taquilla.Views.AdminViews
             this.Close();
         }
 
-        private void DashboardAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        private void btn_inicio_Click(object sender, EventArgs e)
         {
+            this.openForm(new AdminViews.Horarios());
         }
     }
 }

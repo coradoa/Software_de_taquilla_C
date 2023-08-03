@@ -8,6 +8,9 @@
     <Compile Update="Views\AdminViews\DashboardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\AdminViews\Horarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\AdminViews\MovieManagment.cs">
       <SubType>Form</SubType>
     </Compile>
