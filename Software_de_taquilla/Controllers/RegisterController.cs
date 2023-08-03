@@ -1,4 +1,5 @@
-﻿using Software_de_taquilla.Models.Dao;
+﻿using iTextSharp.text.xml;
+using Software_de_taquilla.Models.Dao;
 using Software_de_taquilla.Views;
 using System;
 using System.Collections.Generic;
@@ -24,11 +25,26 @@ namespace Software_de_taquilla.Controllers
 
         public void register(Object sender, EventArgs e)
         {
-            string name = this.view.txt_user.Text;
-            string pass = this.view.txt_pass.Text;
-            UserDao usr = new UserDao();
-            usr.insertUser(name, pass, 3);
-            this.view.printMessage("¡Usuario creado!");
+            try { 
+                string name = this.view.txt_user.Text;
+                string pass = this.view.txt_pass.Text;
+                UserDao usr = new UserDao();
+                if(name.Equals("") || pass.Equals("")) {
+                    this.view.printMessage("Rellene todos los campos");
+                }
+                else
+                {
+                   
+                    usr.insertUser(name, pass, 3);
+                    this.view.printMessage("¡Usuario creado!");
+
+                }
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show("Error al registrar usuario: " +
+                ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
     }
